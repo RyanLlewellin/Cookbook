@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta name="description" content="A personal collection of favorite recipes.">
+  <title>Cookbook | My Recipe Collection</title>
+  <style>
+    :root{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#242c26;background:#f7f4ee}
+    *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}
+    .shell{max-width:1120px;margin:auto;padding:0 24px}
+    header{border-bottom:1px solid #e2e1d9;background:#fffdf8}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding-top:21px;padding-bottom:21px}
+    .brand{font-size:1.35rem;font-weight:800;letter-spacing:-.04em}.brand span{color:#b96b43}
+    .nav small{color:#68736b}
+    .hero{padding:78px 0 54px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:#9b6548;font-size:.75rem;font-weight:800}
+    h1{font-family:Georgia,serif;font-size:clamp(2.8rem,7vw,5rem);font-weight:500;line-height:1.05;letter-spacing:-.045em;max-width:740px;margin:16px 0}
+    .lead{color:#69746c;font-size:1.12rem;max-width:580px;line-height:1.65}
+    .search{display:flex;gap:12px;align-items:center;background:white;border:1px solid #dddcd3;border-radius:15px;padding:14px 18px;margin:28px 0 0;max-width:620px;box-shadow:0 5px 24px #232d2310}
+    .search svg{flex:none;color:#6e786f}.search input{border:0;outline:0;min-width:0;width:100%;background:transparent;color:#242c26}
+    section{padding-bottom:48px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+    h2{font-family:Georgia,serif;font-size:1.75rem;font-weight:500;letter-spacing:-.025em}
+    .muted{color:#748078;font-size:.9rem}.chips{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 25px}
+    .chip{cursor:pointer;border:1px solid #dcded5;border-radius:999px;padding:10px 17px;background:#fffdf8;color:#4d5a50}
+    .chip[aria-pressed=true],.chip:hover{background:#294e3b;border-color:#294e3b;color:white}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px}
+    .recipe{background:white;border:1px solid #e5e4dc;border-radius:17px;overflow:hidden;transition:transform .15s}
+    .recipe:hover{transform:translateY(-3px)}.recipe img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .recipe-body{padding:18px}.recipe h3{margin:6px 0;font-size:1.1rem}.recipe p{color:#68746c;margin:0}
+    .empty{background:#fffdf8;border:1px dashed #c9cfc5;border-radius:18px;padding:50px 22px;text-align:center;color:#66746b}
+    .empty strong{display:block;color:#2d4334;font-family:Georgia,serif;font-size:1.5rem;font-weight:500;margin-bottom:8px}
+    footer{border-top:1px solid #e2e1d9;padding:26px 0 40px;color:#7b847c;font-size:.85rem}
+    @media(max-width:550px){.hero{padding:54px 0 32px}.nav small{display:none}}
+  </style>
+</head>
+<body>
+<header><div class="shell nav"><a class="brand" href="./">Cook<span>book.</span></a><small>Made for good food, kept for later.</small></div></header>
+<main class="shell">
+  <div class="hero">
+    <div class="eyebrow">My personal recipe collection</div>
+    <h1>Something good is cooking.</h1>
+    <p class="lead">A home for the recipes worth making again. Browse by category, search for a favorite, and keep everything in one place.</p>
+    <label class="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="search" type="search" placeholder="Search recipes or ingredients…" aria-label="Search recipes or ingredients">
+    </label>
+  </div>
+  <section aria-labelledby="browse-title">
+    <div class="section-head"><h2 id="browse-title">Browse recipes</h2><span id="count" class="muted"></span></div>
+    <div id="filters" class="chips" aria-label="Filter by category"></div>
+    <div id="recipes" class="grid" aria-live="polite"></div>
+  </section>
+</main>
+<footer><div class="shell">Cookbook · Your recipes, your way.</div></footer>
+<script>
+(() => {
+  const categories = ["All", "Breakfast", "Lunch", "Dinner", "Snacks", "Desserts", "Drinks"];
+  const filters = document.querySelector("#filters");
+  const results = document.querySelector("#recipes");
+  const count = document.querySelector("#count");
+  const search = document.querySelector("#search");
+  let recipes = [], active = "All";
+  const slug = s => String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  function render() {
+    filters.replaceChildren();
+    categories.forEach(category => {
+      const button = document.createElement("button");
+      button.className = "chip"; button.type = "button";
+      button.textContent = category;
+      button.setAttribute("aria-pressed", String(active === category));
+      button.addEventListener("click", () => { active = category; render(); });
+      filters.append(button);
+    });
+    const q = search.value.trim().toLowerCase();
+    const matches = recipes.filter(r =>
+      (active === "All" || r.category === active) &&
+      [r.title, r.description, ...(r.ingredients || [])].join(" ").toLowerCase().includes(q)
+    );
+    count.textContent = matches.length + (matches.length === 1 ? " recipe" : " recipes");
+    results.replaceChildren();
+    if (!matches.length) {
+      const empty = document.createElement("div");
+      empty.className = "empty"; empty.style.gridColumn = "1/-1";
+      const heading = document.createElement("strong");
+      heading.textContent = recipes.length ? "No matching recipes yet." : "Your recipe collection starts here.";
+      const description = document.createElement("span");
+      description.textContent = recipes.length ? "Try another search or category." : "We'll bring in your saved recipes and photos soon.";
+      empty.append(heading, description); results.append(empty); return;
+    }
+    matches.forEach(r => {
+      const card = document.createElement("a");
+      card.className = "recipe";
+      card.href = r.url || "./" + slug(r.category) + "/" + slug(r.slug || r.title) + "/";
+      if (r.image) {
+        const img = document.createElement("img");
+        img.src = r.image; img.alt = r.title; img.loading = "lazy"; card.append(img);
+      }
+      const body = document.createElement("div"); body.className = "recipe-body";
+      const label = document.createElement("span"); label.className = "eyebrow"; label.textContent = r.category;
+      const title = document.createElement("h3"); title.textContent = r.title;
+      const desc = document.createElement("p"); desc.textContent = r.description || "";
+      body.append(label, title, desc); card.append(body); results.append(card);
+    });
+  }
+  search.addEventListener("input", render);
+  fetch("./recipes.json").then(r => { if(!r.ok) throw Error("Unable to load recipes"); return r.json(); })
+    .then(data => { recipes = Array.isArray(data) ? data : []; render(); })
+    .catch(() => { results.textContent = "Recipes couldn't be loaded. Please refresh the page."; });
+  render();
+})();
+</script>
+</body>
+</html>
