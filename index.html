@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f7f4ee">
   <meta name="description" content="A personal collection of favorite recipes.">
-  <title>Cookbook | My Recipe Collection</title>
+  <title>Cyan’s Cookbook | Recipes</title>
   <style>
     :root{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#242c26;background:#f7f4ee}
     *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}
@@ -32,10 +32,10 @@
     .empty strong{display:block;color:#2d4334;font-family:Georgia,serif;font-size:1.5rem;font-weight:500;margin-bottom:8px}
     footer{border-top:1px solid #e2e1d9;padding:26px 0 40px;color:#7b847c;font-size:.85rem}
     @media(max-width:550px){.hero{padding:54px 0 32px}.nav small{display:none}}
-  </style>
+  .cyan-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding-top:19px;padding-bottom:19px}.cyan-nav a{text-decoration:none}.cyan-back{justify-self:start;display:inline-flex;align-items:center;gap:8px;color:#294e3b;font-size:.91rem;font-weight:650;white-space:nowrap}.cyan-title{justify-self:center;font-family:Georgia,serif;font-size:clamp(1.1rem,3vw,1.55rem);font-weight:700;white-space:nowrap;color:#242c26}.cyan-cart{justify-self:end;display:inline-flex;align-items:center;gap:5px;background:#e7ede3;border:1px solid #cbd9ca;border-radius:999px;padding:9px 12px;color:#294e3b;font-weight:650;font-size:.85rem;white-space:nowrap}@media(max-width:560px){.cyan-nav{gap:5px}.back-label,.cart-label{display:none}.cyan-back{font-size:1.7rem}.cyan-cart{padding:9px 11px}.cyan-title{font-size:1.22rem}}</style>
 </head>
 <body>
-<header><div class="shell nav"><a class="brand" href="./">Cook<span>book.</span></a><nav style="display:flex;gap:20px;align-items:center"><a href="./pantry/" style="font-weight:650;color:#294e3b">What Can I Make?</a><small>Made for good food, kept for later.</small></nav></div></header>
+<header><div class="shell cyan-nav"><a class="cyan-back" href="./" aria-label="Back to all recipes"><span aria-hidden="true">←</span><span class="back-label">All recipes</span></a><a class="cyan-title" href="./">Cyan’s Cookbook</a><a class="cyan-cart" href="./grocery/" aria-label="Open grocery list">🛒 <span class="cart-label">Grocery list</span></a></div></header>
 <main class="shell">
   <div class="hero">
     <div class="eyebrow">My personal recipe collection</div>
@@ -53,7 +53,7 @@
     <div id="recipes" class="grid" aria-live="polite"></div>
   </section>
 </main>
-<footer><div class="shell">Cookbook · Your recipes, your way.</div></footer>
+<footer><div class="shell">Cyan’s Cookbook · Your recipes, your way.</div></footer>
 <script>
 (() => {
   const categories = ["All", "Breakfast", "Lunch", "Dinner", "Snacks", "Desserts", "Drinks"];
