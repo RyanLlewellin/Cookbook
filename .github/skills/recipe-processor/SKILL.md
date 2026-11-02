@@ -39,3 +39,11 @@ Preserve existing Cookbook formatting, category paths, and navigation. Generate 
 - Do not scale 'to taste' ingredients automatically. Flag ingredients whose amounts cannot be parsed reliably rather than guessing.
 - Do not linearly scale prep or cook times. Keep source timing and optionally add a note that larger batches may require adjustments.
 - Implement scaling client-side without paid services, and ensure it works on mobile.
+
+## Canonical recipe database and retroactive consistency
+- Store source-of-truth recipes only in data/recipes.json, using schema_version: 2. The root recipes.json and per-recipe HTML are generated artifacts; do not edit them independently.
+- Each ingredient is a structured object with name, quantity (number or null), unit, optional, optional note, and optional scalable. Keep original amounts for serving recalculations.
+- All recipe pages are produced from templates/recipe.html and assets/recipe.js via scripts/build.py. The existing canonical URL pattern is /<category-lowercase>/<slug>/.
+- GitHub Actions .github/workflows/cookbook.yml reruns validation, deterministic migrations, full page regeneration, and deployment when this skill or supported source files change.
+- If this skill is changed to require new metadata, also implement safe conversion in scripts/migrate.py, appropriate shared-page changes in scripts/build.py or templates, and regression tests. Natural-language skill changes cannot automatically implement arbitrary code or infer unavailable recipe facts.
+- Retain unknown values as null and emit REVIEW messages rather than introducing unsupported guesses. All preserved recipes must remain accessible after migration.
