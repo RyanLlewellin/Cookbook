@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "Garlic Parmesan Pasta",
+    "slug": "garlic-parmesan-pasta",
+    "category": "Dinner",
+    "description": "A simple, creamy garlic and Parmesan pasta. Sample recipe for testing the Cookbook.",
+    "ingredients": [
+      "pasta",
+      "butter",
+      "garlic",
+      "Parmesan",
+      "salt",
+      "pepper"
+    ],
+    "url": "./dinner/garlic-parmesan-pasta/"
+  }
+]
