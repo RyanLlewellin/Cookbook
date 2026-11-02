@@ -1,28 +1,38 @@
 # Cookbook Recipe Publisher
 
-When the user shares a recipe (Instagram link, screenshot, photo, or text) in the Cookbook project, automatically publish to RyanLlewellin/Cookbook- without routine approval.
+Repository: https://github.com/RyanLlewellin/Cookbook
 
-## Extraction
-- Extract only supported title, ingredients, quantities, instructions, times, servings, and source.
-- Do not invent missing quantities or cooking steps. Preserve original source URL.
-- If Instagram cannot be accessed, ask for screenshots or caption. Do not publish a misleading incomplete recipe.
-- Check for existing recipe with matching source URL or normalized title before creating a duplicate.
+## Publishing policy
+When the user shares a recipe (Instagram URL, screenshot, photo, or text) in the Cookbook project, publish it automatically through the connected GitHub tools without routine approval, provided the recipe can be extracted accurately. Read .github/skills/recipe-processor/SKILL.md first.
 
-## Schema
-Each recipe in data/recipes.json uses:
-title (string), slug (string), category (Breakfast|Lunch|Dinner|Snacks|Desserts|Drinks), description (string), ingredients (string[]), instructions (string[]), image (string|null), url (string), source (object with type and url), servings (number|null), prepTime (number|null), cookTime (number|null).
-Optional unknowns are null; never fabricate data.
+## Canonical data
+- **Edit only data/recipes.json** when adding or changing recipe contents.
+- Each recipe uses schema_version: 2, title, slug, category, description, original_servings, ingredients, instructions, source, image, difficulty, ingredient_count, prep_time_minutes, cook_time_minutes, total_time_minutes, estimated_fields.
+- Category must be Breakfast, Lunch, Dinner, Snacks, Desserts, or Drinks.
+- Ingredients are objects: name, quantity (number|null), unit, optional, and optional note/scalable.
+- Preserve original amounts. Use scalable=false for unparsed amounts and seasonings "to taste".
+- Record uncertainty in estimated_fields. Never silently invent quantities or instructions; missing values may remain null.
+- Check source URL and normalized title for duplicates before inserting.
+- For Instagram posts that cannot be read, request caption or screenshots rather than publishing an incomplete recipe.
 
-## URLs
-Canonical path: /recipes/<lowercase-category>/<unique-recipe-slug>/.
-Create recipes/<category>/<slug>/index.html. Use stable unique slugs, avoiding collisions.
+## URLs and generated output
+- Canonical URL uses the existing path scheme: /Cookbook/<category-lowercase>/<slug>/ for GitHub Pages.
+- GitHub repository page: <category-lowercase>/<slug>/index.html.
+- **Do not manually modify generated files:** recipes.json, data/generated_paths.json, or existing recipe page HTML.
+- scripts/build.py generates those outputs from data/recipes.json and templates/recipe.html.
+- assets/recipe.js provides the 1-10 servings selector and scaling across all recipe pages.
+- The homepage loads generated recipes.json automatically.
+- Preserve images and the original source URL when available.
 
-## Publishing
-- Read current index.html and data/recipes.json from GitHub before changes.
-- Generate each page from a consistent HTML layout compatible with the existing homepage style, with semantic headings, ingredient list, numbered directions, responsive layout, source link, and safe escaped text.
-- Add a new recipe object to data/recipes.json without deleting existing entries.
-- Ensure the homepage loads data/recipes.json and renders links; do not assume it already does.
-- Publish to GitHub using connected GitHub tools. Confirm actual successful commits, not intended actions.
-- If partial failure occurs, report exactly what succeeded and what remains.
-- Return GitHub link to recipe and public URL only if hosting is configured.
-- Ask the user only if critical details are missing.
+## Automation and migration
+- .github/workflows/cookbook.yml runs on recipe data, skill, template, migration script, asset, or test changes.
+- It runs scripts/migrate.py --write, validates recipes with tests, rebuilds all pages, saves generated outputs, and deploys GitHub Pages.
+- Migration code is deterministic: safely derivable values (e.g. ingredient_count) update all recipes. Uncertain times/difficulty are flagged for review, not hallucinated.
+- Updating written skill guidance alone **does not implement arbitrary new schema logic**. Any new field or migration rule also requires a corresponding change to scripts/migrate.py, scripts/build.py/templates, and tests.
+- Confirm successful GitHub commits and, when possible, the GitHub Actions deployment before reporting publication. Report exact failures.
+
+## Useful commands
+- python scripts/migrate.py --write
+- python -m unittest discover -s tests -v
+- python scripts/build.py
+- python scripts/package.py
