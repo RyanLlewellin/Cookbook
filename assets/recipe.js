@@ -13,6 +13,24 @@
   } catch (_) {
     return; // Keep the server-rendered ingredient list intact.
   }
+  const slug = s => String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const id = slug(recipe.category || "recipe") + "/" + slug(recipe.slug || recipe.title);
+  const key = "cookbook-recipe-servings";
+  function readServings() {
+    try {
+      const data = JSON.parse(localStorage.getItem(key) || "{}");
+      const value = Number(data[id]);
+      return Number.isInteger(value) && value >= 1 && value <= 10 ? value : null;
+    } catch (_) { return null; }
+  }
+  function saveServings(value) {
+    try {
+      const data = JSON.parse(localStorage.getItem(key) || "{}");
+      const state = data && typeof data === "object" && !Array.isArray(data) ? data : {};
+      state[id] = value;
+      localStorage.setItem(key, JSON.stringify(state));
+    } catch (_) {}
+  }
   const original = recipe.original_servings;
   if (!Number.isInteger(original) || original <= 0) {
     selector.disabled = true;
@@ -66,6 +84,17 @@
         : "Amounts are scaled from the original recipe. Seasonings marked 'to taste' are unchanged.";
     }
   }
-  selector.addEventListener("change", render);
+  const saved = readServings();
+  if (saved && selector.querySelector('option[value="' + saved + '"]')) selector.value = String(saved);
+  selector.addEventListener("change", () => {
+    const value = Number(selector.value);
+    if (Number.isInteger(value) && value >= 1 && value <= 10) saveServings(value);
+    render();
+  });
+  window.addEventListener("storage", event => {
+    if (event.key !== key) return;
+    const updated = readServings();
+    if (updated) { selector.value = String(updated); render(); }
+  });
   render();
 })();
