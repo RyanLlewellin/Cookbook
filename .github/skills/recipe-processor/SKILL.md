@@ -30,3 +30,12 @@ Prefer explicit source information. If timing or difficulty is not supplied, der
 
 ## Publishing
 Preserve existing Cookbook formatting, category paths, and navigation. Generate one dedicated page per recipe and link it from the homepage/category listing. Publish automatically when the connected GitHub workflow is available, per user preference. Avoid duplicate recipes and preserve original source attribution.
+
+## Dynamic servings and scalable ingredients
+- Every recipe must include original_servings (positive integer) and structured ingredient quantities as numeric amounts with units; retain the original source text as well.
+- Recipe pages must provide a servings dropdown for integers 1 through 10, initially set to original_servings when within that range (otherwise choose a sensible in-range default while preserving original_servings for scaling).
+- Recalculate each scalable ingredient as original_amount * selected_servings / original_servings, without mutating the source values.
+- Format common kitchen fractions naturally (1/4, 1/3, 1/2, 2/3, 3/4) and preserve unit consistency. For eggs or indivisible items, show useful guidance rather than silently rounding.
+- Do not scale 'to taste' ingredients automatically. Flag ingredients whose amounts cannot be parsed reliably rather than guessing.
+- Do not linearly scale prep or cook times. Keep source timing and optionally add a note that larger batches may require adjustments.
+- Implement scaling client-side without paid services, and ensure it works on mobile.
