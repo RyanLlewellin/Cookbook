@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta name="description" content="{{DESCRIPTION_ATTR}}">
+  <title>{{TITLE}} | Cookbook</title>
+  <style>
+    :root{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#242c26;background:#f7f4ee}
+    *{box-sizing:border-box}body{margin:0}a{color:#294e3b}
+    header{border-bottom:1px solid #e2e1d9;background:#fffdf8}
+    .shell{max-width:950px;margin:auto;padding:0 24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding-top:21px;padding-bottom:21px}
+    .brand{text-decoration:none;font-size:1.35rem;font-weight:800;letter-spacing:-.04em;color:#242c26}.brand span{color:#b96b43}
+    .back{font-size:.9rem;text-decoration:none}
+    main{padding-top:46px;padding-bottom:90px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.15em;color:#9b6548;font-size:.75rem;font-weight:800}
+    h1,h2{font-family:Georgia,serif;font-weight:500;line-height:1.13}
+    h1{font-size:clamp(2.6rem,7vw,4.7rem);letter-spacing:-.045em;margin:12px 0}
+    .intro{color:#68746c;font-size:1.1rem;line-height:1.65;max-width:760px;margin:12px 0 25px}
+    .hero-image{width:100%;max-height:420px;object-fit:cover;border-radius:18px;margin:10px 0 24px}
+    .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:12px;margin:24px 0 36px}
+    .metric{border:1px solid #e2e1d9;background:#fffdf8;border-radius:12px;padding:14px}
+    .metric-label{font-size:.75rem;color:#66746b;text-transform:uppercase;letter-spacing:.06em}
+    .metric-value{font-size:1.05rem;font-weight:700;margin-top:4px}
+    .content{display:grid;grid-template-columns:minmax(240px,.9fr) minmax(0,1.3fr);gap:36px;align-items:start}
+    .panel{background:#fffdf8;border:1px solid #e2e1d9;border-radius:18px;padding:26px}
+    h2{font-size:1.75rem;margin:0 0 16px}
+    .servings-row{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px}
+    .servings-row label{font-size:.85rem;font-weight:700;color:#4e5c53}
+    select{font:inherit;padding:10px 34px 10px 12px;border:1px solid #cdd5ca;border-radius:10px;background:white;color:#243c2d;max-width:120px}
+    select:disabled{background:#f4f4f0;color:#7e847d}
+    ul,ol{padding-left:22px;line-height:1.65}
+    li{padding:6px 0}li::marker{color:#9b6548}
+    .note{font-size:.81rem;color:#67746b;line-height:1.5}
+    .source{margin-top:32px;border-top:1px solid #e2e1d9;padding-top:22px;color:#66746b;font-size:.85rem}
+    .source a{overflow-wrap:anywhere}
+    @media(max-width:680px){main{padding-top:34px}.content{grid-template-columns:1fr;gap:20px}.panel{padding:22px}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{gap:12px}}
+  </style>
+  <script src="../../assets/recipe.js" defer></script>
+</head>
+<body>
+<header><div class="shell nav"><a class="brand" href="../../">Cook<span>book.</span></a><a class="back" href="../../">← All recipes</a></div></header>
+<main class="shell">
+  <div class="eyebrow">{{CATEGORY}}</div>
+  <h1>{{TITLE}}</h1>
+  <p class="intro">{{DESCRIPTION}}</p>
+  {{IMAGE_HTML}}
+  <div class="metrics" aria-label="Recipe details">
+    <div class="metric"><div class="metric-label">Prep</div><div class="metric-value">{{PREP}}</div></div>
+    <div class="metric"><div class="metric-label">Cook</div><div class="metric-value">{{COOK}}</div></div>
+    <div class="metric"><div class="metric-label">Total</div><div class="metric-value">{{TOTAL}}</div></div>
+    <div class="metric"><div class="metric-label">Difficulty</div><div class="metric-value">{{DIFFICULTY}}</div></div>
+    <div class="metric"><div class="metric-label">Ingredients</div><div class="metric-value">{{COUNT}}</div></div>
+  </div>
+  <div class="content">
+    <section class="panel">
+      <div class="servings-row">
+        <h2>Ingredients</h2>
+        <div>
+          <label for="servings">Servings</label>
+          <select id="servings" aria-label="Number of servings" {{SELECT_DISABLED}}>{{SERVINGS_OPTIONS}}</select>
+        </div>
+      </div>
+      <ul id="ingredients">{{INGREDIENTS}}</ul>
+      <p id="scaling-note" class="note">{{SCALING_NOTE}}</p>
+    </section>
+    <section class="panel">
+      <h2>Instructions</h2>
+      <ol>{{INSTRUCTIONS}}</ol>
+      <p class="note">Cook times may vary when changing batch size.</p>
+    </section>
+  </div>
+  {{SOURCE_HTML}}
+</main>
+<script type="application/json" id="recipe-data">{{RECIPE_JSON}}</script>
+</body>
+</html>
