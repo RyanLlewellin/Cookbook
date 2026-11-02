@@ -5,13 +5,21 @@
     "category": "Dinner",
     "description": "A simple, creamy garlic and Parmesan pasta. Sample recipe for testing the Cookbook.",
     "ingredients": [
-      "pasta",
+      "dry pasta",
       "butter",
       "garlic",
       "Parmesan",
+      "reserved pasta water",
       "salt",
-      "pepper"
+      "black pepper",
+      "parsley"
     ],
-    "url": "./dinner/garlic-parmesan-pasta/"
+    "url": "./dinner/garlic-parmesan-pasta/",
+    "image": null,
+    "difficulty": "Easy",
+    "ingredient_count": 7,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20
   }
 ]

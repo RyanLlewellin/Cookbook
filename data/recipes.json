@@ -21,34 +21,39 @@
         "name": "dry pasta",
         "quantity": 6,
         "unit": "oz",
-        "optional": false
+        "optional": false,
+        "scalable": true
       },
       {
         "name": "butter",
         "quantity": 2,
         "unit": "tbsp",
-        "optional": false
+        "optional": false,
+        "scalable": true
       },
       {
         "name": "garlic",
         "quantity": 3,
         "unit": "cloves",
         "note": "minced",
-        "optional": false
+        "optional": false,
+        "scalable": true
       },
       {
         "name": "Parmesan",
         "quantity": 0.5,
         "unit": "cup",
         "note": "grated",
-        "optional": false
+        "optional": false,
+        "scalable": true
       },
       {
         "name": "reserved pasta water",
         "quantity": 0.5,
         "unit": "cup",
         "note": "as needed",
-        "optional": false
+        "optional": false,
+        "scalable": true
       },
       {
         "name": "salt",
