@@ -39,6 +39,14 @@
     .source a{overflow-wrap:anywhere}
     @media(max-width:680px){main{padding-top:34px}.content{grid-template-columns:1fr;gap:20px}.panel{padding:22px}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{gap:12px}}
   .cyan-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding-top:19px;padding-bottom:19px}.cyan-nav a{text-decoration:none}.cyan-back{justify-self:start;display:inline-flex;align-items:center;gap:8px;color:#294e3b;font-size:.91rem;font-weight:650;white-space:nowrap}.cyan-title{justify-self:center;font-family:Georgia,serif;font-size:clamp(1.1rem,3vw,1.55rem);font-weight:700;white-space:nowrap;color:#242c26}.cyan-actions{justify-self:end;display:flex;align-items:center;gap:7px}.cyan-action{display:inline-flex;align-items:center;gap:5px;background:#e7ede3;border:1px solid #cbd9ca;border-radius:999px;padding:9px 12px;color:#294e3b;font-weight:650;font-size:.85rem;white-space:nowrap}@media(max-width:680px){.cyan-nav{gap:5px}.back-label,.action-label{display:none}.cyan-back{font-size:1.7rem}.cyan-action{padding:9px 11px}.cyan-title{font-size:1.22rem}}</style>
+  <style>
+    .ingredient-status{display:block;font-size:.85rem;font-weight:700}
+    .ingredient-have{color:#24613f}.ingredient-missing{color:#a12d24}
+    .ingredient-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
+    .ingredient-actions button,#add-missing{font:inherit;border:1px solid #bdccbf;border-radius:8px;background:#f5f8f3;color:#294e3b;padding:.3rem .6rem;cursor:pointer}
+    .ingredient-actions button:disabled,#add-missing:disabled{opacity:.55;cursor:default}
+  </style>
+  <script src="../../assets/kitchen.js" defer></script>
   <script src="../../assets/recipe.js" defer></script>
 </head>
 <body>
@@ -65,6 +73,8 @@
         </div>
       </div>
       <ul id="ingredients"><li>½ cup rolled oats (certified gluten-free if needed)</li><li>½ ripe banana</li><li>1 large egg</li><li>½ scoop vanilla protein powder</li><li>¼ cup milk of choice, plus 1–2 tbsp if needed</li><li>Pinch of sea salt</li><li>¼ tsp baking soda</li><li>1 tbsp dark chocolate chips</li><li>1 tsp honey or maple syrup (not included in the macro estimate) (optional)</li></ul>
+      <button id="add-missing" type="button" hidden>Add all missing ingredients</button>
+      <p id="ingredient-feedback" class="note" role="status"></p>
       <p id="scaling-note" class="note">Amounts are scaled from 1 original servings. Season to taste.</p>
     </section>
     <section class="panel">
