@@ -22,6 +22,11 @@
 
     <section class="panel" aria-labelledby="add-title">
       <div class="panel-head"><div><span class="eyebrow">Quick update</span><h2 id="add-title">Add an ingredient</h2></div><button class="btn ghost" id="copy-inventory" type="button">Copy inventory for ChatGPT</button></div>
+      <div class="toolbar" style="justify-content:flex-start;margin-top:14px">
+        <button class="btn ghost" id="export-inventory" type="button">Export inventory</button>
+        <button class="btn ghost" id="import-inventory" type="button">Import inventory</button>
+        <input type="file" id="inventory-file" accept=".json,application/json" hidden>
+      </div>
       <form class="add-form" id="add-form">
         <input class="field" id="item-name" required placeholder="Ingredient, e.g. eggs" aria-label="Ingredient name">
         <input class="field" id="item-quantity" type="number" min="0.01" step="0.01" value="1" aria-label="Quantity">
@@ -80,6 +85,33 @@
     document.querySelector('#bulk-add').onclick=()=>{const input=document.querySelector('#bulk-input'),items=K.parseList(input.value);if(!items.length)return;items.forEach(item=>K.addInventoryItem(item,'Added kitchen list'));input.value='';render();toast('Added '+items.length+' items')};
     document.querySelector('#bulk-replace').onclick=()=>{const input=document.querySelector('#bulk-input'),items=K.parseList(input.value);if(!items.length)return;if(confirm('Replace your current fridge and pantry with these '+items.length+' items?')){K.replaceInventory(items,'New kitchen snapshot');input.value='';render();toast('Inventory replaced')}};
     document.querySelector('#copy-inventory').onclick=async()=>{try{await navigator.clipboard.writeText(K.summary());toast('Inventory copied')}catch{alert(K.summary())}};
+    const inventoryFile = document.querySelector('#inventory-file');
+    document.querySelector('#export-inventory').onclick = () => {
+      const url = URL.createObjectURL(new Blob([K.exportInventory()], { type: 'application/json' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'cookbook-inventory.json';
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    };
+    document.querySelector('#import-inventory').onclick = () => inventoryFile.click();
+    inventoryFile.onchange = async () => {
+      const file = inventoryFile.files[0];
+      inventoryFile.value = '';
+      if (!file) return;
+      try {
+        const backup = JSON.parse(await file.text());
+        if ((K.loadInventory().length || K.listSnapshots().length) &&
+            !confirm('Replace this browser’s inventory and snapshot history with the backup?')) return;
+        const count = K.importInventory(backup);
+        render();
+        toast('Imported ' + count + ' items and their snapshot history');
+      } catch {
+        toast('Import failed. Check that the file is a Cookbook inventory export.');
+      }
+    };
     document.querySelector('#recipe-search').oninput=render;document.querySelector('#only-ready').onchange=render;window.addEventListener('storage',render);const imported=importFromHash();render();if(imported.count)toast(imported.added?'Added '+imported.count+' voice-list items':'Inventory already up to date');
   })();
   </script>

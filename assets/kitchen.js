@@ -152,6 +152,61 @@
     return saveInventory(snapshot.items, "Restored " + snapshot.label);
   }
 
+  function exportInventory() {
+    return JSON.stringify({
+      format: "cookbook-inventory",
+      version: 1,
+      items: loadInventory(),
+      snapshots: listSnapshots(),
+    }, null, 2);
+  }
+
+  function importInventory(backup) {
+    const invalid = () => new Error("Choose a valid Cookbook inventory backup.");
+    function validateItems(items) {
+      if (!Array.isArray(items)) throw invalid();
+      return items.map(item => {
+        if (!item || typeof item.name !== "string" || !item.name.trim() ||
+            !Number.isFinite(item.quantity) || item.quantity <= 0 ||
+            !["fridge", "pantry"].includes(item.location)) throw invalid();
+        return sanitizeItem({ ...item, id: id() });
+      });
+    }
+    if (backup?.format !== "cookbook-inventory" || backup.version !== 1 ||
+        !Array.isArray(backup.snapshots)) throw invalid();
+    const items = sortItems(validateItems(backup.items));
+    const snapshots = backup.snapshots.slice(0, MAX_SNAPSHOTS).map(snapshot => {
+      if (!snapshot || typeof snapshot.label !== "string" ||
+          !Number.isFinite(snapshot.createdAt)) throw invalid();
+      const items = validateItems(snapshot.items);
+      return { id: id(), label: cleanName(snapshot.label), createdAt: snapshot.createdAt, items, fingerprint: fingerprint(items) };
+    });
+    const current = loadInventory();
+    if (current.length && fingerprint(current) !== fingerprint(items)) {
+      snapshots.unshift({ id: id(), label: "Before inventory import", createdAt: Date.now(), items: current, fingerprint: fingerprint(current) });
+    }
+    const updates = [
+      [SNAPSHOTS_KEY, snapshots.slice(0, MAX_SNAPSHOTS)],
+      [INVENTORY_KEY, items],
+      [LEGACY_PANTRY_KEY, [...new Set(items.map(item => normalize(item.name)).filter(Boolean))]],
+    ];
+    const written = [];
+    try {
+      for (const [key, value] of updates) {
+        const previous = localStorage.getItem(key);
+        localStorage.setItem(key, JSON.stringify(value));
+        written.push([key, previous]);
+      }
+    } catch (error) {
+      for (const [key, previous] of written.reverse()) {
+        if (previous === null) localStorage.removeItem(key);
+        else localStorage.setItem(key, previous);
+      }
+      throw error;
+    }
+    return items.length;
+  }
+
   function parseList(text) {
     return String(text || "").split(/[\n,;]+/).map(line => line.replace(/^[-*•✓\s]+/, "").trim()).filter(Boolean).slice(0, 150).map(line => {
       let location = null;
@@ -228,6 +283,7 @@
     normalize, inferLocation, parseList, summary,
     loadInventory, saveInventory, addInventoryItem, updateInventoryItem,
     removeInventoryItem, useOne, replaceInventory, listSnapshots, restoreSnapshot,
+    exportInventory, importInventory,
     loadCustomGroceries, saveCustomGroceries, addCustomGrocery, removeCustomGrocery,
     putAway,
   };
