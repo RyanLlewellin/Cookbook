@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" role="img" aria-labelledby="title desc">
+  <title id="title">Buffalo chicken crunchwrap illustration</title><desc id="desc">Golden folded tortilla wedges with spicy chicken, cheese and lettuce on a plate.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f5d5b9"/><stop offset="1" stop-color="#d9a47d"/></linearGradient><linearGradient id="wrap" x2=".8" y2="1"><stop stop-color="#f6d998"/><stop offset="1" stop-color="#bc733b"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="11"/></filter></defs>
+  <rect width="500" height="640" rx="28" fill="url(#bg)"/><circle cx="80" cy="118" r="70" fill="#fff8e8" opacity=".24"/><circle cx="428" cy="520" r="82" fill="#fff2da" opacity=".2"/>
+  <ellipse cx="249" cy="494" rx="193" ry="36" fill="#543522" opacity=".25" filter="url(#s)"/><ellipse cx="250" cy="472" rx="195" ry="120" fill="#fffaf0"/><ellipse cx="250" cy="472" rx="160" ry="91" fill="#e9ddc9"/>
+  <g stroke="#a65b31" stroke-width="5" stroke-linejoin="round">
+    <path d="M91 365 244 269q16-10 31 3l141 119-104 132q-12 16-31 7L120 436q-18-9-29-31-9-21 0-40Z" fill="url(#wrap)"/>
+    <path d="m126 392 122-77q14-9 28 2l119 101-79 95-164-88q-20-11-26-33Z" fill="#fbdf9a"/>
+    <path d="m166 383 79-49q10-6 20 1l78 67-56 71-100-55q-23-12-21-35Z" fill="#db653b"/>
+  </g>
+  <path d="m244 340 115 77-61 77-88-47 34-107Z" fill="#f1c951" opacity=".95"/>
+  <g fill="#47824c"><path d="m139 394 25-25 26 14-8 29-30 7Z"/><path d="m292 366 25-16 24 14-5 27-29 4Z"/><path d="m225 435 24-18 22 13-8 28-27 2Z"/><path d="m323 438 20-19 22 12-4 27-26 5Z"/></g>
+  <g fill="#ffd974"><circle cx="190" cy="367" r="8"/><circle cx="271" cy="390" r="7"/><circle cx="302" cy="448" r="8"/><circle cx="215" cy="408" r="6"/></g>
+  <path d="M93 482c60 63 267 71 322-5" fill="none" stroke="#fff" stroke-width="5" opacity=".7"/>
+  <g fill="#c4422c"><circle cx="120" cy="255" r="7"/><circle cx="385" cy="281" r="6"/><circle cx="102" cy="533" r="5"/></g>
+</svg>
