@@ -1,4 +1,5 @@
 """Recipe migration and shared-template regression tests."""
+import html
 import json
 import sys
 import unittest
@@ -54,8 +55,15 @@ class CookbookTests(unittest.TestCase):
             self.assertIn('id="recipe-data"', page)
             self.assertIn('option value="10"', page)
             self.assertIn('option value="1"', page)
-            self.assertIn(recipe["title"], page)
+            self.assertIn(html.escape(recipe["title"]), page)
             self.assertNotIn("{{", page)
+
+    def test_repository_asset_images_resolve_from_nested_recipe_pages(self):
+        recipe = dict(self.recipes[0])
+        recipe["image"] = "assets/example.jpg"
+        page = render(recipe, TEMPLATE.read_text(encoding="utf-8"))
+        self.assertIn('src="../../assets/example.jpg"', page)
+        self.assertEqual(generated_listing([recipe])[0]["image"], "assets/example.jpg")
 
     def test_recipe_data_cannot_inject_html(self):
         recipe = dict(self.recipes[0])

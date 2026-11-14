@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" role="img" aria-labelledby="title desc">
+  <title id="title">Korean beef and rice bowl illustration</title><desc id="desc">A bowl of rice topped with glossy Korean-style beef, green onions and sesame seeds.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e9d7b7"/><stop offset="1" stop-color="#9bb18e"/></linearGradient><linearGradient id="bowl" x2="0" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#d9cfb7"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="12"/></filter></defs>
+  <rect width="500" height="640" rx="28" fill="url(#bg)"/><circle cx="410" cy="116" r="80" fill="#fff7e6" opacity=".23"/><circle cx="75" cy="495" r="63" fill="#f1e5c7" opacity=".26"/>
+  <ellipse cx="250" cy="500" rx="178" ry="31" fill="#233324" opacity=".23" filter="url(#s)"/><ellipse cx="250" cy="451" rx="184" ry="114" fill="#a88a67"/><path d="M67 407c12 105 84 161 183 161s171-56 183-161H67Z" fill="url(#bowl)"/><ellipse cx="250" cy="408" rx="190" ry="119" fill="#fdf9ef"/><ellipse cx="250" cy="399" rx="163" ry="91" fill="#e6d3a4"/>
+  <g fill="#fffbea"><ellipse cx="126" cy="387" rx="24" ry="10"/><ellipse cx="173" cy="346" rx="25" ry="10"/><ellipse cx="221" cy="376" rx="26" ry="10"/><ellipse cx="281" cy="348" rx="25" ry="10"/><ellipse cx="339" cy="379" rx="25" ry="10"/><ellipse cx="155" cy="430" rx="25" ry="10"/><ellipse cx="302" cy="431" rx="26" ry="10"/></g>
+  <g fill="#75402a" stroke="#4b2e24" stroke-width="3">
+    <path d="m123 365 32-23 31 13-3 28-34 12-29-10Z"/><path d="m186 333 36-15 27 20-8 27-38 5-22-16Z"/><path d="m257 354 34-22 29 14 1 29-37 13-30-13Z"/><path d="m319 380 33-17 24 22-10 27-35 2-20-14Z"/><path d="m179 407 34-18 28 14-5 30-37 9-25-16Z"/><path d="m254 409 36-18 28 17-7 29-37 7-25-16Z"/>
+  </g>
+  <g fill="#9c5b35"><path d="M123 365q18-20 35-3t28-5l3 15q-18 21-34 5t-31 3Z"/><path d="M191 335q17-20 31-4t24-2l-4 16q-16 20-31 4t-23 5Z"/><path d="M264 356q17-18 31-3t24-3l-1 16q-17 17-31 3t-23 5Z"/></g>
+  <g fill="#44814c"><path d="M150 319c-7-25 4-30 17-10 6-23 18-22 17 2 20-13 26-4 10 11-16 15-31 11-44-3Z"/><path d="M305 316c0-23 12-25 18-3 12-19 24-14 16 7 20-7 24 4 5 14-17 9-29-1-39-18Z"/><path d="M231 465c1-20 12-22 17-4 12-16 21-11 14 7 16-4 19 6 3 14-16 7-26-4-34-17Z"/></g>
+  <g fill="#fff4cf"><ellipse cx="195" cy="363" rx="4" ry="2" transform="rotate(30 195 363)"/><ellipse cx="281" cy="385" rx="4" ry="2" transform="rotate(-25 281 385)"/><ellipse cx="343" cy="347" rx="4" ry="2" transform="rotate(35 343 347)"/><ellipse cx="222" cy="424" rx="4" ry="2" transform="rotate(-20 222 424)"/><ellipse cx="314" cy="428" rx="4" ry="2" transform="rotate(25 314 428)"/></g>
+  <path d="M80 478c48 60 300 76 340-9" fill="none" stroke="#fff" stroke-width="5" opacity=".7"/>
+</svg>

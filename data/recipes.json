@@ -90,5 +90,2649 @@
     "image": null,
     "schema_version": 2,
     "ingredient_count": 7
+  },
+  {
+    "title": "Cloud-Soft Chocolate Mousse Cups",
+    "slug": "cloud-soft-chocolate-mousse",
+    "category": "Desserts",
+    "description": "A chickpea-water kitchen trick turns into a fluffy, chocolatey dessert. This cookbook version keeps the airy idea and adds Greek yogurt plus whey for a more satisfying protein hit.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DezbXYRNIcQ/"
+    },
+    "original_servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": null,
+    "total_time_minutes": null,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "aquafaba (liquid from 1 can chickpeas)",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup aquafaba (liquid from 1 can chickpeas)"
+      },
+      {
+        "name": "plain nonfat Greek yogurt",
+        "quantity": 170,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "170 g plain nonfat Greek yogurt"
+      },
+      {
+        "name": "chocolate or unflavored whey isolate",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop chocolate or unflavored whey isolate"
+      },
+      {
+        "name": "unsweetened cocoa powder",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp unsweetened cocoa powder"
+      },
+      {
+        "name": "1–2 tbsp sugar-free maple-style syrup, to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "1–2 tbsp sugar-free maple-style syrup, to taste"
+      },
+      {
+        "name": "cream of tartar or lemon juice (optional, helps whip)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": true,
+        "scalable": true,
+        "source_text": "¼ tsp cream of tartar or lemon juice (optional, helps whip)"
+      },
+      {
+        "name": "Fresh berries or cocoa dust, to finish (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "scalable": false,
+        "source_text": "Fresh berries or cocoa dust, to finish (optional)"
+      }
+    ],
+    "instructions": [
+      "Chill two small serving glasses. Pour chickpea liquid into a clean, dry bowl. Add cream of tartar if using.",
+      "Whip with an electric mixer until very fluffy and holding firm peaks, about 6–10 minutes.",
+      "In another bowl, whisk yogurt, whey, cocoa and syrup until smooth. Taste and add a little more syrup if you like.",
+      "Fold one big spoonful of whipped aquafaba into the chocolate mixture to loosen it. Gently fold in the rest in two additions, keeping as much air as possible.",
+      "Spoon into glasses and chill at least 30 minutes. Finish with berries or a dusting of cocoa."
+    ],
+    "image": "assets/chocolate-mousse-reel.jpg",
+    "schema_version": 2,
+    "ingredient_count": 5
+  },
+  {
+    "title": "Mini Muffin-Tin Pizza Bites",
+    "slug": "mini-muffin-tin-pizza-bites",
+    "category": "Snacks",
+    "description": "Golden little pizza cups with melty mozzarella and pepperoni. This quick, higher-protein interpretation is inspired by the Reel’s muffin-tin method; the post caption doesn’t give a full ingredient list or quantities.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DPJt3EzDas4/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "low-fat cottage cheese",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 cup low-fat cottage cheese"
+      },
+      {
+        "name": "self-rising flour, plus a little for dusting",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 cup self-rising flour, plus a little for dusting"
+      },
+      {
+        "name": "pizza sauce",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "⅓ cup pizza sauce"
+      },
+      {
+        "name": "part-skim mozzarella, shredded",
+        "quantity": 0.75,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¾ cup part-skim mozzarella, shredded"
+      },
+      {
+        "name": "turkey pepperoni",
+        "quantity": 2,
+        "unit": "oz",
+        "optional": false,
+        "scalable": true,
+        "source_text": "About 2 oz turkey pepperoni",
+        "note": "approximate amount"
+      },
+      {
+        "name": "Italian seasoning",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp Italian seasoning"
+      },
+      {
+        "name": "Cooking spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking spray"
+      }
+    ],
+    "instructions": [
+      "Heat oven to 400°F. Coat a 12-cup muffin pan with cooking spray.",
+      "Blend cottage cheese until smooth. Mix with flour until a shaggy dough forms. If sticky, dust in a little extra flour.",
+      "Divide dough into 12 pieces. Press each into a muffin cup, covering the bottom and sides to make a little shell.",
+      "Spoon about 1 tsp sauce into each. Add mozzarella, turkey pepperoni and a pinch of Italian seasoning.",
+      "Bake 14–17 minutes, until the edges are golden and centers are hot. Rest 3 minutes, loosen with a small spatula and serve warm."
+    ],
+    "image": "assets/mini-muffin-pizza-bites.jpg",
+    "schema_version": 2,
+    "ingredient_count": 7
+  },
+  {
+    "title": "Protein Pumpkin Cinnamon Rolls",
+    "slug": "protein-pumpkin-cinnamon-rolls",
+    "category": "Desserts",
+    "description": "Soft pumpkin-spiced rolls with a tangy yogurt and cream-cheese glaze. Bake a batch, keep it chilled, and warm one up for an easy sweet breakfast or dessert.",
+    "source": {
+      "type": "user-provided image",
+      "url": null
+    },
+    "original_servings": 16,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 90,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "all-purpose flour",
+        "quantity": 3,
+        "unit": "cups",
+        "optional": false,
+        "scalable": true,
+        "source_text": "3 cups all-purpose flour"
+      },
+      {
+        "name": "pumpkin purée, warmed",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 cup pumpkin purée, warmed"
+      },
+      {
+        "name": "nonfat Greek yogurt, divided",
+        "quantity": 1.5,
+        "unit": "cups",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ cups nonfat Greek yogurt, divided"
+      },
+      {
+        "name": "vanilla protein powder",
+        "quantity": 2,
+        "unit": "scoops",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 scoops vanilla protein powder"
+      },
+      {
+        "name": "instant yeast",
+        "quantity": 1,
+        "unit": "packet",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 packet instant yeast"
+      },
+      {
+        "name": "large egg",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 large egg"
+      },
+      {
+        "name": "butter, divided",
+        "quantity": 4,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "4 tbsp butter, divided"
+      },
+      {
+        "name": "+ 2 tbsp coconut sugar",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "⅓ cup + 2 tbsp coconut sugar"
+      },
+      {
+        "name": "light cream cheese",
+        "quantity": 2,
+        "unit": "oz",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 oz light cream cheese"
+      },
+      {
+        "name": "powdered sugar",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup powdered sugar"
+      },
+      {
+        "name": "Cinnamon, pumpkin-pie spice and a pinch of salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cinnamon, pumpkin-pie spice and a pinch of salt"
+      }
+    ],
+    "instructions": [
+      "Warm the pumpkin purée. Mix flour, protein powder, yeast, pumpkin-pie spice and a pinch of salt. Add the warm pumpkin, 1 cup yogurt, egg and 2 tbsp melted butter.",
+      "Knead for about 5 minutes, until smooth. Cover and leave somewhere warm for about 1 hour, until doubled.",
+      "Roll into a large rectangle. Spread with the remaining 2 tbsp butter, then scatter over the coconut sugar and cinnamon.",
+      "Roll up tightly and cut into 16 rolls. Arrange in a lined baking pan and bake at 350°F for 22–25 minutes, until golden.",
+      "Whisk the cream cheese, remaining ½ cup yogurt and powdered sugar into a glaze. Spread over the warm rolls."
+    ],
+    "image": "assets/pumpkin-cinnamon-rolls-source.png",
+    "schema_version": 2,
+    "ingredient_count": 11
+  },
+  {
+    "title": "Nutella-Stuffed Protein French Toast",
+    "slug": "nutella-stuffed-protein-french-toast",
+    "category": "Breakfast",
+    "description": "Golden, custardy French-toast sandwiches hide a chocolate-hazelnut protein filling. The full recipe makes two generous servings.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CwA1s4sOegH/"
+    },
+    "original_servings": 2,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 20,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "large eggs",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 large eggs"
+      },
+      {
+        "name": "(120 ml) unsweetened almond milk, divided",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup (120 ml) unsweetened almond milk, divided"
+      },
+      {
+        "name": "(30 g) vanilla whey protein",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop (30 g) vanilla whey protein"
+      },
+      {
+        "name": "zero-calorie sweetener, divided",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp zero-calorie sweetener, divided"
+      },
+      {
+        "name": "(30 g) chocolate whey protein",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop (30 g) chocolate whey protein"
+      },
+      {
+        "name": "(20 g) Nutella",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (20 g) Nutella"
+      },
+      {
+        "name": "(8 g) powdered peanut butter",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (8 g) powdered peanut butter"
+      },
+      {
+        "name": "(5 g) cocoa powder",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (5 g) cocoa powder"
+      },
+      {
+        "name": "hazelnut extract",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ tsp hazelnut extract"
+      },
+      {
+        "name": "(45 ml) almond milk, as needed",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "About 3 tbsp (45 ml) almond milk, as needed",
+        "note": "approximate amount"
+      },
+      {
+        "name": "thick slices bread, ideally brioche",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "4 thick slices bread, ideally brioche"
+      },
+      {
+        "name": "Cooking spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking spray"
+      }
+    ],
+    "instructions": [
+      "Whisk eggs, ½ cup almond milk, vanilla whey and half the sweetener in a shallow dish.",
+      "In a bowl, mix chocolate whey, Nutella, powdered peanut butter, cocoa, remaining sweetener and hazelnut extract. Add the extra almond milk a tablespoon at a time until thick and spreadable.",
+      "Trim the crusts if you like. Spread the filling over two bread slices, top with the other slices and cut each sandwich in half.",
+      "Warm a lightly greased skillet over medium heat. Dip each sandwich in the egg mixture, turning to coat, then cook 3–5 minutes per side until golden and cooked through.",
+      "If the centers are still soft, stand the halves on their cut edges and cook briefly. Serve warm."
+    ],
+    "image": "assets/nutella-french-toast.jpg",
+    "schema_version": 2,
+    "ingredient_count": 12
+  },
+  {
+    "title": "Baked High-Protein Pancake Bowl",
+    "slug": "baked-high-protein-pancake-bowl",
+    "category": "Breakfast",
+    "description": "A warm, berry-topped pancake bowl that bakes in one dish. It’s an easy sweet breakfast or dessert with Greek yogurt and whey for a substantial protein boost.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DTLuop_jFCV/"
+    },
+    "original_servings": 1,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 25,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 egg"
+      },
+      {
+        "name": "fruit or berries of your choice, divided",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g fruit or berries of your choice, divided"
+      },
+      {
+        "name": "0% fat Greek yogurt",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g 0% fat Greek yogurt"
+      },
+      {
+        "name": "whey protein",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop whey protein"
+      },
+      {
+        "name": "flour",
+        "quantity": 30,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "30 g flour"
+      },
+      {
+        "name": "semi-skimmed milk",
+        "quantity": 70,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "70 ml semi-skimmed milk"
+      },
+      {
+        "name": "baking powder",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp baking powder"
+      }
+    ],
+    "instructions": [
+      "Heat the oven to 320°F (160°C). Add half the fruit and all the remaining ingredients to an oven-safe dish.",
+      "Mix until thoroughly combined and smooth, with no dry flour or protein-powder clumps.",
+      "Scatter the remaining fruit over the top.",
+      "Bake for 20–25 minutes, until set in the center. Let cool slightly, then enjoy warm."
+    ],
+    "image": null,
+    "schema_version": 2,
+    "ingredient_count": 7
+  },
+  {
+    "title": "Cookie-Baked Protein Oatmeal",
+    "slug": "protein-cookie-baked-oatmeal",
+    "category": "Desserts",
+    "description": "A warm, chocolate-chip cookie in a ramekin—with oats, banana and a scoop of protein blended right in. Easy enough for breakfast, cozy enough for dessert.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C9kzTYtpCNq/"
+    },
+    "original_servings": 1,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 25,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "rolled oats (certified gluten-free if needed)",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup rolled oats (certified gluten-free if needed)"
+      },
+      {
+        "name": "ripe banana",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ ripe banana"
+      },
+      {
+        "name": "large egg",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 large egg"
+      },
+      {
+        "name": "vanilla protein powder",
+        "quantity": 0.5,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ scoop vanilla protein powder"
+      },
+      {
+        "name": "milk of choice, plus 1–2 tbsp if needed",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup milk of choice, plus 1–2 tbsp if needed"
+      },
+      {
+        "name": "Pinch of sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Pinch of sea salt"
+      },
+      {
+        "name": "baking soda",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ tsp baking soda"
+      },
+      {
+        "name": "dark chocolate chips",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp dark chocolate chips"
+      },
+      {
+        "name": "honey or maple syrup (not included in the macro estimate)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": true,
+        "scalable": true,
+        "source_text": "Optional: 1 tsp honey or maple syrup (not included in the macro estimate)"
+      }
+    ],
+    "instructions": [
+      "Heat oven to 350°F (175°C) and lightly grease a ramekin.",
+      "Blend oats, banana, egg, protein powder, milk, salt and baking soda until smooth. If the batter is very thick, blend in another spoonful of milk.",
+      "Pour into the ramekin and scatter chocolate chips over the top.",
+      "Bake for about 20 minutes, until the center is set and a toothpick comes out mostly clean. Let it cool for 5 minutes before eating."
+    ],
+    "image": "assets/cookie-baked-oatmeal.jpg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Frozen Cookies & Cream Protein Bars",
+    "slug": "frozen-oreo-protein-bars",
+    "category": "Desserts",
+    "description": "Creamy Greek-yogurt protein bars with vanilla, crunchy Oreo pieces and a cool, cheesecake-like texture straight from the freezer.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C8YQIsdvi3a/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": null,
+    "total_time_minutes": null,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "plain Greek yogurt",
+        "quantity": 200,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "200 g plain Greek yogurt"
+      },
+      {
+        "name": "cookies-and-cream protein powder",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop cookies-and-cream protein powder"
+      },
+      {
+        "name": "zero-calorie sweetener, or to taste",
+        "quantity": 10,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "10 g zero-calorie sweetener, or to taste"
+      },
+      {
+        "name": "sugar-free vanilla pudding mix (about 1 serving)",
+        "quantity": 8,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "8 g sugar-free vanilla pudding mix (about 1 serving)"
+      },
+      {
+        "name": "fat-free milk",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g fat-free milk"
+      },
+      {
+        "name": "vanilla extract",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp vanilla extract"
+      },
+      {
+        "name": "Oreo cookies, crushed",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 Oreo cookies, crushed"
+      }
+    ],
+    "instructions": [
+      "In a bowl, whisk Greek yogurt, protein powder, sweetener, pudding mix, milk and vanilla until smooth.",
+      "Crush the Oreos into small pieces and fold them through the mixture.",
+      "Divide into four silicone bar molds or small freezer-safe molds. Tap gently to remove air pockets.",
+      "Freeze for at least 4 hours, until firm. Let a bar sit at room temperature for 3–5 minutes before eating for a softer bite."
+    ],
+    "image": "assets/frozen-oreo-protein-bars.jpg",
+    "schema_version": 2,
+    "ingredient_count": 7
+  },
+  {
+    "title": "Garlic-Butter Steak Bites & Potatoes",
+    "slug": "garlic-butter-steak-bites",
+    "category": "Dinner",
+    "description": "A hearty meal-prep tray of seared steak bites, golden potatoes and garlicky butter, inspired by the Reel’s steak-and-potato combo.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Cy_gKw8IFlr/?img_index=1"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 35,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(900 g) lean sirloin steak, cut into 1-inch cubes",
+        "quantity": 2,
+        "unit": "lb",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 lb (900 g) lean sirloin steak, cut into 1-inch cubes"
+      },
+      {
+        "name": "(680 g) baby potatoes, quartered",
+        "quantity": 1.5,
+        "unit": "lb",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ lb (680 g) baby potatoes, quartered"
+      },
+      {
+        "name": "olive oil, divided",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp olive oil, divided"
+      },
+      {
+        "name": "butter",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tbsp butter"
+      },
+      {
+        "name": "garlic, finely chopped",
+        "quantity": 3,
+        "unit": "cloves",
+        "optional": false,
+        "scalable": true,
+        "source_text": "3 cloves garlic, finely chopped"
+      },
+      {
+        "name": "smoked paprika",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp smoked paprika"
+      },
+      {
+        "name": "dried thyme",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp dried thyme"
+      },
+      {
+        "name": "Salt and black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Salt and black pepper"
+      },
+      {
+        "name": "Chopped parsley, to finish",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Chopped parsley, to finish"
+      }
+    ],
+    "instructions": [
+      "Heat oven to 400°F (200°C). Toss potatoes with half the olive oil, paprika, thyme, salt and pepper. Spread on a sheet pan and roast 25–30 minutes, turning once, until browned and tender.",
+      "Pat steak dry and season generously with salt and pepper. Heat the remaining oil in a large skillet over high heat.",
+      "Sear steak in a single layer, working in batches if needed, for about 2 minutes per side for browned edges and a medium center.",
+      "Lower heat. Add butter and garlic; stir for 30 seconds, then toss the steak through the garlic butter.",
+      "Divide potatoes and steak among four meal-prep containers. Spoon any pan butter over the top and finish with parsley."
+    ],
+    "image": "assets/garlic-butter-steak-bites.jpg",
+    "schema_version": 2,
+    "ingredient_count": 9
+  },
+  {
+    "title": "Crispy Honey-Garlic Chicken Fried Rice",
+    "slug": "crispy-honey-garlic-chicken-fried-rice",
+    "category": "Dinner",
+    "description": "Crispy starch-coated chicken tossed in sticky honey-garlic sauce, served with egg-fried rice and vegetables. The creator’s batch makes seven generous, protein-packed portions.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DOlMf60EwTk/"
+    },
+    "original_servings": 7,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 50,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "boneless, skinless chicken breast, diced",
+        "quantity": 1.05,
+        "unit": "kg",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1.05 kg boneless, skinless chicken breast, diced"
+      },
+      {
+        "name": "reduced-sodium soy sauce",
+        "quantity": 35,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "35 ml reduced-sodium soy sauce"
+      },
+      {
+        "name": "garlic cloves, minced",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 garlic cloves, minced"
+      },
+      {
+        "name": "black pepper, 1 tsp onion powder, 1 tsp garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp black pepper, 1 tsp onion powder, 1 tsp garlic powder"
+      },
+      {
+        "name": "potato starch for coating (about 40 g sticks)",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g potato starch for coating (about 40 g sticks)"
+      },
+      {
+        "name": "frozen mixed vegetables",
+        "quantity": 500,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "500 g frozen mixed vegetables"
+      },
+      {
+        "name": "eggs + 200 g egg whites (or 5 eggs)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "4 eggs + 200 g egg whites (or 5 eggs)"
+      },
+      {
+        "name": "spring onion, sliced and divided",
+        "quantity": 50,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "50 g spring onion, sliced and divided"
+      },
+      {
+        "name": "day-old cooked white rice",
+        "quantity": 980,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "980 g day-old cooked white rice"
+      },
+      {
+        "name": "reduced-sodium soy sauce",
+        "quantity": 40,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "40 ml reduced-sodium soy sauce"
+      },
+      {
+        "name": "Honey-garlic sauce: 5 garlic cloves, minced; 60 ml reduced-sodium soy sauce; 60 ml water; 100 g reduced-sugar ketchup; 25 ml rice-wine vinegar; 80 g honey; 1 tsp cornflour mixed with 80 ml water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Honey-garlic sauce: 5 garlic cloves, minced; 60 ml reduced-sodium soy sauce; 60 ml water; 100 g reduced-sugar ketchup; 25 ml rice-wine vinegar; 80 g honey; 1 tsp cornflour mixed with 80 ml water"
+      }
+    ],
+    "instructions": [
+      "Whisk together the sauce ingredients except the cornflour slurry. Simmer in a small pan; stir in the slurry and cook until glossy and lightly thickened. Set aside.",
+      "Toss chicken with 35 ml soy sauce, 2 minced garlic cloves, black pepper, onion powder and garlic powder. Coat with potato starch; shake off excess.",
+      "Air-fry chicken in batches in a single layer at 400°F (200°C), turning once, until crisp and cooked through to 165°F (74°C). Use a food thermometer to check the thickest pieces.",
+      "In a large nonstick skillet, scramble the eggs and egg whites until just set. Transfer to a plate.",
+      "Cook the white parts of the spring onion and mixed vegetables in the skillet until hot. Add the day-old rice and 40 ml soy sauce; stir-fry until the rice is hot and separated.",
+      "Fold the eggs back into the rice. Toss the crispy chicken with enough warm sauce to coat, then serve over the fried rice. Finish with the green spring onion."
+    ],
+    "image": "assets/honey-garlic-chicken-fried-rice.jpg",
+    "schema_version": 2,
+    "ingredient_count": 10
+  },
+  {
+    "title": "Honey BBQ Chicken Mac & Cheese",
+    "slug": "honey-bbq-chicken-mac-and-cheese",
+    "category": "Dinner",
+    "description": "Creamy light-cheddar macaroni topped with sticky honey BBQ chicken. A satisfying, meal-prep-friendly bowl with nearly 60 grams of protein per serving.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C--BQKYSLS6/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "boneless, skinless chicken breast, cut into bite-size pieces",
+        "quantity": 700,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "700 g boneless, skinless chicken breast, cut into bite-size pieces"
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp salt"
+      },
+      {
+        "name": "onion powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp onion powder"
+      },
+      {
+        "name": "smoked paprika",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp smoked paprika"
+      },
+      {
+        "name": "garlic powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp garlic powder"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp olive oil"
+      },
+      {
+        "name": "honey",
+        "quantity": 25,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "25 g honey"
+      },
+      {
+        "name": "sugar-free or reduced-sugar BBQ sauce",
+        "quantity": 85,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "85 g sugar-free or reduced-sugar BBQ sauce"
+      },
+      {
+        "name": "dry macaroni",
+        "quantity": 320,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "320 g dry macaroni"
+      },
+      {
+        "name": "fat-free evaporated milk (or low-fat milk)",
+        "quantity": 340,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "340 ml fat-free evaporated milk (or low-fat milk)"
+      },
+      {
+        "name": "light cream cheese",
+        "quantity": 80,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "80 g light cream cheese"
+      },
+      {
+        "name": "chicken stock powder",
+        "quantity": 1.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ tsp chicken stock powder"
+      },
+      {
+        "name": "grated light cheddar",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g grated light cheddar"
+      }
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil. Cook macaroni according to the package until just tender. Before draining, save about ½ cup of pasta water.",
+      "Meanwhile, toss chicken with salt, onion powder, smoked paprika and garlic powder. Heat olive oil in a large nonstick skillet over medium-high heat. Cook chicken in a single layer, turning as needed, until browned and 165°F (74°C) in the thickest pieces.",
+      "Lower the heat. Add honey and BBQ sauce to the chicken and toss until glossy and coated. Set aside.",
+      "In the pasta pot, whisk evaporated milk, light cream cheese and stock powder over medium-low heat until smooth and gently steaming.",
+      "Stir in the cheddar a handful at a time until melted. Add drained macaroni and toss to coat. Loosen with a splash of reserved pasta water if needed.",
+      "Divide macaroni among four bowls or meal-prep containers and top with the honey BBQ chicken."
+    ],
+    "image": "assets/honey-bbq-chicken-mac-cheese.jpg",
+    "schema_version": 2,
+    "ingredient_count": 13
+  },
+  {
+    "title": "Crispy Bang Bang Chicken Tenders",
+    "slug": "crispy-bang-bang-chicken-tenders",
+    "category": "Dinner",
+    "description": "Crunchy cornflake-coated tenders with a creamy, sweet-heat yogurt dip. Quick to make in the air fryer and portioned as three tenders per serving.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DRARXagDYqB/"
+    },
+    "original_servings": 2,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 25,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "chicken tenders (about 6)",
+        "quantity": 300,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "300 g chicken tenders (about 6)"
+      },
+      {
+        "name": "egg, whisked",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 egg, whisked"
+      },
+      {
+        "name": "flour",
+        "quantity": 30,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "30 g flour"
+      },
+      {
+        "name": "cornflakes, crushed",
+        "quantity": 50,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "50 g cornflakes, crushed"
+      },
+      {
+        "name": "garlic powder + 1 tsp onion powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp garlic powder + 1 tsp onion powder"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Salt and pepper"
+      },
+      {
+        "name": "sprays cooking oil",
+        "quantity": 10,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "10 sprays cooking oil"
+      },
+      {
+        "name": "Bang bang sauce: 100 g 0% Greek yogurt, 30 g sweet chilli sauce, 1 tsp sriracha and 20 g honey",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Bang bang sauce: 100 g 0% Greek yogurt, 30 g sweet chilli sauce, 1 tsp sriracha and 20 g honey"
+      },
+      {
+        "name": "Extra sweet chilli sauce: 5 g per tender (about 30 g total)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Extra sweet chilli sauce: 5 g per tender (about 30 g total)"
+      }
+    ],
+    "instructions": [
+      "Heat the air fryer to 400°F (200°C). Season the chicken with salt, pepper, garlic powder and onion powder.",
+      "Set out three shallow bowls: flour, whisked egg, and crushed cornflakes.",
+      "Coat each tender in flour, dip in egg, then press into the cornflakes until covered.",
+      "Arrange in the air fryer basket in a single layer. Spray with the cooking oil and air-fry for 15 minutes, turning halfway, until crisp and 165°F (74°C) inside.",
+      "While the chicken cooks, stir together the Greek yogurt, 30 g sweet chilli sauce, sriracha and honey.",
+      "Spread 5 g extra sweet chilli sauce over each tender, then serve with the bang bang dip."
+    ],
+    "image": "assets/bang-bang-chicken-tenders.jpg",
+    "schema_version": 2,
+    "ingredient_count": 9
+  },
+  {
+    "title": "Air-Fryer Bang Bang Chicken",
+    "slug": "air-fryer-bang-bang-chicken",
+    "category": "Dinner",
+    "description": "Juicy paprika-seasoned chicken with a creamy, sweet-chilli bang bang sauce. This lighter, protein-forward version swaps the Reel’s mayo-heavy sauce for tangy Greek yogurt.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C9sBHwpuFph/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 25,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "boneless, skinless chicken breast, cut into strips",
+        "quantity": 600,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "600 g boneless, skinless chicken breast, cut into strips"
+      },
+      {
+        "name": "garlic powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp garlic powder"
+      },
+      {
+        "name": "onion powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp onion powder"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp paprika"
+      },
+      {
+        "name": "Sazon seasoning",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp Sazon seasoning"
+      },
+      {
+        "name": "Cooking spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking spray"
+      },
+      {
+        "name": "Lighter bang bang sauce: 170 g plain nonfat Greek yogurt, ¼ cup sweet-chilli sauce (reduced-sugar if you like), 1 tbsp sriracha, and 1 tsp lime juice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Lighter bang bang sauce: 170 g plain nonfat Greek yogurt, ¼ cup sweet-chilli sauce (reduced-sugar if you like), 1 tbsp sriracha, and 1 tsp lime juice"
+      },
+      {
+        "name": "Spring onion or sesame seeds to finish (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "scalable": false,
+        "source_text": "Spring onion or sesame seeds to finish (optional)"
+      }
+    ],
+    "instructions": [
+      "Heat the air fryer to 390°F (200°C). Pat the chicken dry, then toss with garlic powder, onion powder, paprika and Sazon.",
+      "Arrange chicken in a single layer in the air-fryer basket and lightly spray with oil. Cook for 15–20 minutes, turning halfway, until browned and 165°F (74°C) in the thickest piece. Cook in batches if needed.",
+      "While it cooks, whisk together Greek yogurt, sweet-chilli sauce, sriracha and lime juice. Taste and adjust the heat with more sriracha.",
+      "Rest the chicken for 3 minutes. Serve with the sauce for dipping, or toss lightly to coat. Finish with spring onion or sesame if using."
+    ],
+    "image": "assets/air-fryer-bang-bang-chicken.jpg",
+    "schema_version": 2,
+    "ingredient_count": 7
+  },
+  {
+    "title": "Sweet Chili Chicken Freezer Burritos",
+    "slug": "sweet-chili-chicken-burritos",
+    "category": "Lunch",
+    "description": "Sticky sweet-chili chicken, creamy spicy rice and green onion tucked into freezer-ready burritos. Make a batch once, then crisp one up whenever you need a fast, filling meal.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C-ijQ6WyQ12/"
+    },
+    "original_servings": 10,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 50,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(48 oz) boneless, skinless chicken thighs",
+        "quantity": 1.36,
+        "unit": "kg",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1.36 kg (48 oz) boneless, skinless chicken thighs"
+      },
+      {
+        "name": "Marinade: 180 g sweet-chili sauce, 90 g soy sauce, 30 g rice vinegar, 15 g sesame oil and black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Marinade: 180 g sweet-chili sauce, 90 g soy sauce, 30 g rice vinegar, 15 g sesame oil and black pepper"
+      },
+      {
+        "name": "sushi rice (dry weight)",
+        "quantity": 240,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "240 g sushi rice (dry weight)"
+      },
+      {
+        "name": "plain skyr or Greek yogurt",
+        "quantity": 200,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "200 g plain skyr or Greek yogurt"
+      },
+      {
+        "name": "sriracha or gochujang",
+        "quantity": 30,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "30 g sriracha or gochujang"
+      },
+      {
+        "name": "Salt and garlic, to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Salt and garlic, to taste"
+      },
+      {
+        "name": "large burrito tortillas",
+        "quantity": 10,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "10 large burrito tortillas"
+      },
+      {
+        "name": "Finely sliced green onions",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Finely sliced green onions"
+      },
+      {
+        "name": "Optional toppings of choice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Optional toppings of choice"
+      }
+    ],
+    "instructions": [
+      "Whisk sweet-chili sauce, soy sauce, rice vinegar, sesame oil and black pepper. Cut chicken into bite-size pieces, coat in the marinade and chill for at least 20 minutes (or overnight).",
+      "Cook sushi rice according to the package. Stir together skyr or Greek yogurt and sriracha; season with salt and garlic, then fold through the warm rice.",
+      "Cook chicken in a large skillet over medium-high heat until browned and 165°F (74°C) inside. Add the marinade and simmer until glossy and sticky, stirring often.",
+      "Warm tortillas so they roll easily. Divide spicy rice and chicken among 10 tortillas; add green onion and any extra toppings.",
+      "Fold in the sides and roll tightly. Cool completely, then wrap each burrito and freeze.",
+      "To reheat from frozen, wrap in a paper towel and microwave for 2 minutes, then air-fry at 375°F (190°C) for 6–8 minutes to crisp, or pan-fry until hot throughout."
+    ],
+    "image": "assets/sweet-chili-chicken-burrito.jpg",
+    "schema_version": 2,
+    "ingredient_count": 9
+  },
+  {
+    "title": "High-Protein Crispy Chicken Nuggets",
+    "slug": "high-protein-crispy-chicken-nuggets",
+    "category": "Snacks",
+    "description": "Seasoned chicken-breast nuggets with a crisp air-fried coating, plus an optional quick hot-honey dip.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C8Zw9jANkZz/"
+    },
+    "original_servings": null,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "lean ground chicken or chicken breast, finely minced",
+        "quantity": 500,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "500 g lean ground chicken or chicken breast, finely minced"
+      },
+      {
+        "name": "large eggs, divided",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 large eggs, divided"
+      },
+      {
+        "name": "each garlic powder, onion powder, paprika, salt and black pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp each garlic powder, onion powder, paprika, salt and black pepper"
+      },
+      {
+        "name": "cayenne pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp cayenne pepper"
+      },
+      {
+        "name": "plain flour (creator tracks about 40 g consumed), plus seasonings to coat",
+        "quantity": 100,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "100 g plain flour (creator tracks about 40 g consumed), plus seasonings to coat"
+      },
+      {
+        "name": "Cooking-oil spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking-oil spray"
+      },
+      {
+        "name": "Optional dip: 15 g butter, 3 tbsp hot sauce, 1 tbsp honey and chilli flakes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Optional dip: 15 g butter, 3 tbsp hot sauce, 1 tbsp honey and chilli flakes"
+      }
+    ],
+    "instructions": [
+      "If using chicken breast, pulse it in a food processor until finely minced. Mix with one egg and the garlic powder, onion powder, paprika, cayenne, salt and pepper.",
+      "Shape into 20–22 small nuggets. Whisk the remaining seasonings into the flour in a shallow bowl; beat the second egg in another bowl.",
+      "Coat each nugget in seasoned flour, dip in beaten egg, then return to flour for a light coating. Shake off excess.",
+      "Arrange in a single layer in the air fryer. Spray with oil, cook at 400°F (200°C) for 12–15 minutes, turning and spraying again halfway through, until the center reaches 165°F (74°C).",
+      "For oven baking, arrange on a lined tray and bake at 400°F (200°C) for about 25–30 minutes, turning once, until cooked through.",
+      "For the optional dip, melt butter, stir in hot sauce and honey, then finish with chilli flakes."
+    ],
+    "image": "assets/crispy-chicken-nuggets.jpg",
+    "schema_version": 2,
+    "ingredient_count": 7
+  },
+  {
+    "title": "Korean Popcorn Chicken Bowls",
+    "slug": "korean-popcorn-chicken-bowl",
+    "category": "Dinner",
+    "description": "Crispy chicken breast in a sweet-spicy gochujang glaze, paired with tangy sticky rice and fresh green onion.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C5TivvHtcge/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "Chicken: 800 g chicken breast, bite-size pieces; 1 egg; 20 ml soy sauce; 1 tbsp black pepper; 40 g cornflour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Chicken: 800 g chicken breast, bite-size pieces; 1 egg; 20 ml soy sauce; 1 tbsp black pepper; 40 g cornflour"
+      },
+      {
+        "name": "Korean glaze: 60 ml soy sauce, 80 ml water, 2 tbsp reduced-sugar ketchup, 3 tbsp gochujang, 2 tbsp rice vinegar, 2 tbsp honey and 30 g brown-style zero-calorie sweetener",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Korean glaze: 60 ml soy sauce, 80 ml water, 2 tbsp reduced-sugar ketchup, 3 tbsp gochujang, 2 tbsp rice vinegar, 2 tbsp honey and 30 g brown-style zero-calorie sweetener"
+      },
+      {
+        "name": "Rice: 200 g uncooked sticky rice, 3 tbsp rice vinegar, 1 tbsp sweetener and salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Rice: 200 g uncooked sticky rice, 3 tbsp rice vinegar, 1 tbsp sweetener and salt"
+      },
+      {
+        "name": "Chopped green onion and sesame seeds, to finish",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Chopped green onion and sesame seeds, to finish"
+      },
+      {
+        "name": "Cooking-oil spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking-oil spray"
+      }
+    ],
+    "instructions": [
+      "Cook sticky rice according to the package. Let it cool for 10 minutes, then fold in rice vinegar, sweetener and salt.",
+      "Toss chicken with soy sauce, black pepper and egg. Add cornflour and toss until lightly coated.",
+      "Arrange chicken in a single layer in the air fryer and mist with oil. Air-fry at 400°F (200°C) for 10–12 minutes, turning once, until crisp and 165°F (74°C) inside. For the oven, bake at 425°F (220°C) for about 15–18 minutes, turning once.",
+      "Meanwhile, whisk glaze ingredients in a saucepan. Simmer 5–8 minutes, stirring, until glossy and slightly thickened.",
+      "Toss the hot chicken in the glaze. Divide rice and chicken among four bowls; add green onion and sesame seeds."
+    ],
+    "image": "assets/korean-popcorn-chicken.jpg",
+    "schema_version": 2,
+    "ingredient_count": 5
+  },
+  {
+    "title": "Spicy Salmon Rice Muffins",
+    "slug": "spicy-salmon-rice-muffins",
+    "category": "Snacks",
+    "description": "Sushi-inspired nori cups filled with sesame-soy salmon, cooled rice and a spicy mayo drizzle, finished with avocado and black sesame.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DCSEKntPz7U/"
+    },
+    "original_servings": 12,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "nori paper",
+        "quantity": 3,
+        "unit": "sheets",
+        "optional": false,
+        "scalable": true,
+        "source_text": "3 sheets nori paper"
+      },
+      {
+        "name": "(260 g) cooked sushi rice, fully cooled",
+        "quantity": 1.5,
+        "unit": "cups",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ cups (260 g) cooked sushi rice, fully cooled"
+      },
+      {
+        "name": "Salmon: 1 lb (450 g) skinless salmon, cut into small cubes; 2 tbsp sesame or olive oil; 1 tbsp low-sodium soy sauce; 1 tbsp honey; 2 scallions, diced; ½ tsp each garlic powder, onion powder, chili powder, paprika and dried oregano; salt to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Salmon: 1 lb (450 g) skinless salmon, cut into small cubes; 2 tbsp sesame or olive oil; 1 tbsp low-sodium soy sauce; 1 tbsp honey; 2 scallions, diced; ½ tsp each garlic powder, onion powder, chili powder, paprika and dried oregano; salt to taste"
+      },
+      {
+        "name": "Spicy mayo: ¼ cup (55 g) Kewpie mayo, 2 tsp sriracha and 1 tsp honey",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Spicy mayo: ¼ cup (55 g) Kewpie mayo, 2 tsp sriracha and 1 tsp honey"
+      },
+      {
+        "name": "To finish: ½ avocado, finely diced; 2 tsp black sesame seeds",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "To finish: ½ avocado, finely diced; 2 tsp black sesame seeds"
+      }
+    ],
+    "instructions": [
+      "Heat oven to 400°F (200°C). Cut each nori sheet into four squares. Make sure the cooked rice is completely cool.",
+      "Toss salmon with oil, soy sauce, 1 tbsp honey, scallions, spices and salt. Marinate up to 4 hours if time allows.",
+      "Press about 1 heaping tablespoon of rice into each cup of a 12-slot silicone muffin pan, letting the nori edges rise up the sides. Add 4–5 salmon cubes to each cup.",
+      "Bake 15–17 minutes, until the salmon is opaque and cooked through; broil 1–2 minutes at the end for extra color if desired.",
+      "Mix the Kewpie mayo, sriracha and 1 tsp honey. Let the muffins cool slightly, then top with avocado, sesame seeds and spicy mayo."
+    ],
+    "image": "assets/spicy-salmon-rice-muffins.jpg",
+    "schema_version": 2,
+    "ingredient_count": 5
+  },
+  {
+    "title": "Chicken Caesar Power Salad",
+    "slug": "high-protein-chicken-caesar-salad",
+    "category": "Lunch",
+    "description": "A giant, crunchy romaine salad tossed with juicy chicken and a tangy Greek-yogurt Caesar dressing.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CwNtvOyptz7/"
+    },
+    "original_servings": 1,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 15,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(115 g) plain fat-free Greek yogurt",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup (115 g) plain fat-free Greek yogurt"
+      },
+      {
+        "name": "(30 g) grated parmesan",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (30 g) grated parmesan"
+      },
+      {
+        "name": "(30 ml) lemon juice",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tbsp (30 ml) lemon juice"
+      },
+      {
+        "name": "minced garlic",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp minced garlic"
+      },
+      {
+        "name": "(15 ml) Worcestershire sauce",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (15 ml) Worcestershire sauce"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp olive oil"
+      },
+      {
+        "name": "anchovy paste (optional)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": true,
+        "scalable": true,
+        "source_text": "1 tsp anchovy paste (optional)"
+      },
+      {
+        "name": "Dijon mustard",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp Dijon mustard"
+      },
+      {
+        "name": "salt and black pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp salt and black pepper"
+      },
+      {
+        "name": "(255 g) chopped romaine",
+        "quantity": 6,
+        "unit": "cups",
+        "optional": false,
+        "scalable": true,
+        "source_text": "6 cups (255 g) chopped romaine"
+      },
+      {
+        "name": "(225 g) cooked chicken breast, sliced",
+        "quantity": 8,
+        "unit": "oz",
+        "optional": false,
+        "scalable": true,
+        "source_text": "8 oz (225 g) cooked chicken breast, sliced"
+      },
+      {
+        "name": "(15 g) croutons",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (15 g) croutons"
+      }
+    ],
+    "instructions": [
+      "Add Greek yogurt, parmesan, lemon juice, garlic, Worcestershire, olive oil, optional anchovy paste, Dijon, salt and pepper to a blender or food processor. Blend smooth.",
+      "If the dressing is too thick, thin with skim milk, 1 tbsp at a time.",
+      "Put romaine and cooked chicken in a large bowl. Pour over the dressing and toss until evenly coated.",
+      "Top with croutons and a little extra parmesan, if you like. Eat right away for the crunchiest salad."
+    ],
+    "image": "assets/chicken-caesar-salad.jpg",
+    "schema_version": 2,
+    "ingredient_count": 11
+  },
+  {
+    "title": "Air-Fryer Blooming Onion",
+    "slug": "air-fryer-blooming-onion",
+    "category": "Snacks",
+    "description": "A crisp, pull-apart onion with smoky spiced crumbs and a tangy Greek-yogurt dipping sauce.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C6_9GM2v_U7/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 35,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "medium onions or 1 large sweet onion",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 medium onions or 1 large sweet onion"
+      },
+      {
+        "name": "all-purpose flour",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 cup all-purpose flour"
+      },
+      {
+        "name": "garlic powder",
+        "quantity": 2,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tsp garlic powder"
+      },
+      {
+        "name": "onion powder, divided",
+        "quantity": 2.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2½ tsp onion powder, divided"
+      },
+      {
+        "name": "paprika, divided",
+        "quantity": 2.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2½ tsp paprika, divided"
+      },
+      {
+        "name": "dried oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp dried oregano"
+      },
+      {
+        "name": "salt and ½ tsp black pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp salt and ½ tsp black pepper"
+      },
+      {
+        "name": "water, as needed",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "About 1 cup water, as needed",
+        "note": "approximate amount"
+      },
+      {
+        "name": "panko breadcrumbs",
+        "quantity": 0.75,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¾ cup panko breadcrumbs"
+      },
+      {
+        "name": "Cooking spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cooking spray"
+      },
+      {
+        "name": "Light dip: 170 g plain Greek yogurt, 1 tbsp light mayonnaise, 2 tbsp ketchup, 1 tbsp horseradish, 1 tsp Worcestershire sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Light dip: 170 g plain Greek yogurt, 1 tbsp light mayonnaise, 2 tbsp ketchup, 1 tbsp horseradish, 1 tsp Worcestershire sauce"
+      }
+    ],
+    "instructions": [
+      "Trim the onion top and peel it, leaving the root end intact. With the root facing up, cut down toward the root to make 12–16 petals without cutting all the way through. Turn over and gently fan open.",
+      "Soak in a bowl of ice water for 10–15 minutes so the petals open. Drain and pat very dry.",
+      "Whisk flour with garlic powder, 2 tsp onion powder, 2 tsp paprika, oregano, salt and pepper. Gradually whisk in water until you have a thick, clingy batter.",
+      "Coat the onion in batter, separating the petals so the batter reaches between them. Turn it upside down to drain excess, then sprinkle panko all over, including between petals.",
+      "Place root-side down in the air fryer, mist generously with cooking spray, and cook at 350°F (175°C) for about 15 minutes, until deeply golden, crisp and tender. Add 3–5 minutes if needed.",
+      "Stir together Greek yogurt, light mayo, ketchup, horseradish, Worcestershire, and the remaining ½ tsp each onion powder and paprika. Serve warm for sharing."
+    ],
+    "image": "assets/air-fryer-blooming-onion.jpg",
+    "schema_version": 2,
+    "ingredient_count": 11
+  },
+  {
+    "title": "Honey Buffalo Chicken Mac & Cheese",
+    "slug": "honey-buffalo-chicken-mac-and-cheese",
+    "category": "Dinner",
+    "description": "Creamy high-protein macaroni with crispy honey-buffalo chicken. The sauce blends cottage cheese, cream cheese and cheddar into a smooth, satisfying meal-prep favorite.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CvetmKzL1yp/"
+    },
+    "original_servings": 4,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "diced chicken breast, seasoned with salt, smoked paprika, garlic powder and onion powder",
+        "quantity": 700,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "700 g diced chicken breast, seasoned with salt, smoked paprika, garlic powder and onion powder"
+      },
+      {
+        "name": "low-fat cottage cheese",
+        "quantity": 350,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "350 g low-fat cottage cheese"
+      },
+      {
+        "name": "low-fat cream cheese, or 4 light cheese wedges",
+        "quantity": 65,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "65 g low-fat cream cheese, or 4 light cheese wedges"
+      },
+      {
+        "name": "cheddar, grated",
+        "quantity": 35,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "35 g cheddar, grated"
+      },
+      {
+        "name": "low-fat milk",
+        "quantity": 80,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "80 ml low-fat milk"
+      },
+      {
+        "name": "Frank’s Buffalo hot sauce, plus 1 tbsp for the chicken",
+        "quantity": 20,
+        "unit": "ml",
+        "optional": false,
+        "scalable": true,
+        "source_text": "20 ml Frank’s Buffalo hot sauce, plus 1 tbsp for the chicken"
+      },
+      {
+        "name": "dry protein macaroni or elbow pasta",
+        "quantity": 320,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "320 g dry protein macaroni or elbow pasta"
+      },
+      {
+        "name": "honey",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp honey"
+      }
+    ],
+    "instructions": [
+      "Season the chicken with salt, smoked paprika, garlic powder and onion powder.",
+      "Blend cottage cheese, cream cheese, cheddar, milk and 20 ml hot sauce for about 2 minutes, until smooth.",
+      "Cook the pasta according to the package directions. Drain, reserving a splash of pasta water.",
+      "Cook chicken in a nonstick skillet over medium heat for 8–10 minutes, turning until golden and cooked through to 165°F (74°C).",
+      "Turn off the heat. Stir honey and 1 tbsp Buffalo sauce through the chicken.",
+      "Toss pasta with the cheese sauce. Loosen with a splash of pasta water if needed, then divide into four portions and top with chicken."
+    ],
+    "image": "assets/honey-buffalo-chicken-mac.jpg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Crispy Beef Taquitos",
+    "slug": "beef-taquitos",
+    "category": "Snacks",
+    "description": "A cheesy, salsa-rich beef filling rolled into corn tortillas, then air-fried until the edges turn crisp. Make them snack-size or fill the tortillas generously for a heartier plate.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CvFomeaN3ep/"
+    },
+    "original_servings": 10,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(16 oz) 96/4 lean ground beef",
+        "quantity": 455,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "455 g (16 oz) 96/4 lean ground beef"
+      },
+      {
+        "name": "(25 g) diced onion",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (25 g) diced onion"
+      },
+      {
+        "name": "jalapeño, diced",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 jalapeño, diced"
+      },
+      {
+        "name": "(7 g) taco seasoning",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (7 g) taco seasoning"
+      },
+      {
+        "name": "(15 g) minced garlic",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (15 g) minced garlic"
+      },
+      {
+        "name": "(170 g) fat-free cheddar",
+        "quantity": 1.5,
+        "unit": "cups",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ cups (170 g) fat-free cheddar"
+      },
+      {
+        "name": "(40 g) whipped cream cheese",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (40 g) whipped cream cheese"
+      },
+      {
+        "name": "(120 g) salsa",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup (120 g) salsa"
+      },
+      {
+        "name": "corn tortillas",
+        "quantity": 10,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "10 corn tortillas"
+      },
+      {
+        "name": "Olive-oil spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Olive-oil spray"
+      }
+    ],
+    "instructions": [
+      "Heat air fryer to 375°F (190°C). Brown the beef in a skillet, breaking it into small pieces.",
+      "Add onion, jalapeño, taco seasoning and garlic. Cook until the beef is no longer pink and the onion softens.",
+      "Transfer to a bowl. Stir in cheddar, whipped cream cheese and salsa until evenly combined.",
+      "Wrap tortillas in a damp towel and microwave for about 1 minute, until flexible. Spoon filling along the lower third of each tortilla and roll tightly.",
+      "Arrange seam-side down in the air fryer basket. Mist with olive oil and air-fry 7–10 minutes, turning once if needed, until crisp."
+    ],
+    "image": "assets/beef-taquitos.jpg",
+    "schema_version": 2,
+    "ingredient_count": 10
+  },
+  {
+    "title": "Queso Chicken & Rice",
+    "slug": "queso-chicken-and-rice",
+    "category": "Dinner",
+    "description": "Taco-seasoned chicken and basmati rice meet a creamy, tangy queso sauce built with Greek yogurt, cheddar and green chiles.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CuHxBcNNdB2/"
+    },
+    "original_servings": 5,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 35,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(680 g) chicken breast",
+        "quantity": 24,
+        "unit": "oz",
+        "optional": false,
+        "scalable": true,
+        "source_text": "24 oz (680 g) chicken breast"
+      },
+      {
+        "name": "avocado oil",
+        "quantity": 1.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ tsp avocado oil"
+      },
+      {
+        "name": "taco seasoning",
+        "quantity": 1.5,
+        "unit": "packets",
+        "optional": false,
+        "scalable": true,
+        "source_text": "About 1½ packets taco seasoning",
+        "note": "approximate amount"
+      },
+      {
+        "name": "dry basmati rice",
+        "quantity": 300,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "300 g dry basmati rice"
+      },
+      {
+        "name": "Queso sauce: 250 g 2% plain Greek yogurt or blended cottage cheese; 85 g red enchilada sauce; 85 g pico de gallo; 85 g cheddar; 100 g light cream cheese; 65 g diced green chiles",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Queso sauce: 250 g 2% plain Greek yogurt or blended cottage cheese; 85 g red enchilada sauce; 85 g pico de gallo; 85 g cheddar; 100 g light cream cheese; 65 g diced green chiles"
+      },
+      {
+        "name": "nutritional yeast and 10 g brown sugar, optional",
+        "quantity": 20,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "20 g nutritional yeast and 10 g brown sugar, optional"
+      },
+      {
+        "name": "each garlic powder and onion powder; pinch of salt",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp each garlic powder and onion powder; pinch of salt"
+      },
+      {
+        "name": "Chopped cilantro, to finish",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Chopped cilantro, to finish"
+      }
+    ],
+    "instructions": [
+      "Cook rice according to its package directions. Season chicken on all sides with taco seasoning.",
+      "Heat avocado oil in a large skillet over medium-high heat. Cook chicken, turning as needed, until browned and the thickest part reaches 165°F (74°C). Rest briefly, then slice or dice.",
+      "Blend Greek yogurt, enchilada sauce, pico, cheddar, cream cheese, green chiles, optional nutritional yeast and brown sugar, garlic powder, onion powder and salt until smooth.",
+      "Warm the queso sauce gently in a saucepan or microwave, stirring often. Do not boil; yogurt-based sauces can split if overheated.",
+      "Divide rice and chicken among five containers. Spoon queso sauce over the top and finish with cilantro."
+    ],
+    "image": "assets/queso-chicken-rice-illustration.svg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Honey Sriracha Salmon Bites",
+    "slug": "honey-sriracha-salmon-bites",
+    "category": "Dinner",
+    "description": "Tender salmon cubes get a quick air-fryer cook, then a sticky honey-sriracha glaze. Serve with rice and crisp vegetables for an easy balanced plate.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CuiMAk7uhZ9/"
+    },
+    "original_servings": 3,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 12,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(450 g) skinless salmon, cut into bite-size cubes",
+        "quantity": 1,
+        "unit": "lb",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 lb (450 g) skinless salmon, cut into bite-size cubes"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp olive oil"
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp salt"
+      },
+      {
+        "name": "garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp garlic powder"
+      },
+      {
+        "name": "paprika",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp paprika"
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ tsp black pepper"
+      },
+      {
+        "name": "Glaze: 2 tbsp honey, 2 tbsp sriracha and 2 minced garlic cloves, optional",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Glaze: 2 tbsp honey, 2 tbsp sriracha and 2 minced garlic cloves, optional"
+      },
+      {
+        "name": "Rice and vegetables, to serve (not included in the creator’s macros)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Rice and vegetables, to serve (not included in the creator’s macros)"
+      }
+    ],
+    "instructions": [
+      "Preheat air fryer to 375°F (190°C). Pat salmon dry and toss with olive oil, salt, garlic powder, paprika and black pepper.",
+      "Arrange salmon in a single layer in the basket. Air-fry for 6 minutes.",
+      "Stir together honey, sriracha and optional minced garlic. Brush or spoon glaze over the salmon.",
+      "Air-fry 1–2 minutes more, until the salmon flakes easily and reaches 145°F (63°C) at its thickest point.",
+      "Serve as is or with rice and vegetables. If meal-prepping, chill promptly and reheat gently to keep the salmon tender."
+    ],
+    "image": "assets/honey-sriracha-salmon.jpg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Buffalo Ranch Chicken Nuggets",
+    "slug": "buffalo-ranch-chicken-nuggets",
+    "category": "Snacks",
+    "description": "Juicy ground-chicken nuggets get coated in crunchy ranch protein chips, air-fried, then tossed with a bright Buffalo finish.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Ct9eEGFNF8Y/"
+    },
+    "original_servings": null,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [
+      "original_servings"
+    ],
+    "ingredients": [
+      {
+        "name": "(16 oz) 99/1 ground chicken",
+        "quantity": 455,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "455 g (16 oz) 99/1 ground chicken"
+      },
+      {
+        "name": "(30 g) panko breadcrumbs",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (30 g) panko breadcrumbs"
+      },
+      {
+        "name": "(10 g) ranch seasoning mix",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tbsp (10 g) ranch seasoning mix"
+      },
+      {
+        "name": "each salt, pepper, garlic powder and onion powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp each salt, pepper, garlic powder and onion powder"
+      },
+      {
+        "name": "(65 g total) ranch protein chips, finely crushed",
+        "quantity": 2,
+        "unit": "bags",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 bags (65 g total) ranch protein chips, finely crushed"
+      },
+      {
+        "name": "egg whites",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 egg whites"
+      },
+      {
+        "name": "(120 ml) Buffalo hot sauce",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup (120 ml) Buffalo hot sauce"
+      },
+      {
+        "name": "Olive-oil spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Olive-oil spray"
+      }
+    ],
+    "instructions": [
+      "Heat air fryer to 350°F (177°C). Mix ground chicken, panko, ranch seasoning, salt, pepper, garlic powder and onion powder.",
+      "Put crushed protein chips in a shallow bowl and egg whites in a second bowl.",
+      "Shape chicken mixture into bite-size nuggets. Dip each in egg whites, then coat in crushed chips. Arrange in a single layer in the air-fryer basket.",
+      "Mist with olive oil and air-fry about 15 minutes, turning once, until golden and the center reaches 165°F (74°C).",
+      "Brush or toss the nuggets with Buffalo sauce. Return to the air fryer for 2 minutes, then serve hot."
+    ],
+    "image": "assets/buffalo-ranch-chicken-nuggets.jpg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Jalapeño Popper Beef McMuffins",
+    "slug": "healthy-beef-mcmuffins",
+    "category": "Breakfast",
+    "description": "A breakfast sandwich with a lean beef patty, cheesy jalapeño egg, crisped English muffin and a little bacon. Prep six, chill, and reheat for a fast morning.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CrsnC42sv8Z/"
+    },
+    "original_servings": 6,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 35,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "eggs, whisked with salt and pepper",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "6 eggs, whisked with salt and pepper"
+      },
+      {
+        "name": "Chives, chopped",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Chives, chopped"
+      },
+      {
+        "name": "light cheese wedges or 90 g light cream cheese",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "6 light cheese wedges or 90 g light cream cheese"
+      },
+      {
+        "name": "jalapeño, diced",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 jalapeño, diced"
+      },
+      {
+        "name": "extra-lean ground beef, formed into six 90 g patties",
+        "quantity": 540,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "540 g extra-lean ground beef, formed into six 90 g patties"
+      },
+      {
+        "name": "Salt, pepper, garlic powder, onion powder, sage, thyme and smoked paprika",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Salt, pepper, garlic powder, onion powder, sage, thyme and smoked paprika"
+      },
+      {
+        "name": "English muffins, toasted",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "6 English muffins, toasted"
+      },
+      {
+        "name": "slices cheddar",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "6 slices cheddar"
+      },
+      {
+        "name": "cooked diced bacon or turkey bacon",
+        "quantity": 24,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "24 g cooked diced bacon or turkey bacon"
+      }
+    ],
+    "instructions": [
+      "Season beef with salt, pepper, garlic powder, onion powder, sage, thyme and smoked paprika. Shape into six thin patties.",
+      "Cook patties in a nonstick skillet over medium-high heat for 3–4 minutes per side, until browned and cooked through to 160°F (71°C). Set aside.",
+      "Whisk eggs with salt and pepper. Stir in jalapeño and chives. Cook in a lightly greased skillet over medium-low heat, gently folding until just set. Divide into six portions.",
+      "Spread a light cheese wedge or a sixth of the cream cheese over each English muffin base. Add egg, beef patty, cheddar and bacon.",
+      "Close with muffin tops. Serve warm, or cool and refrigerate promptly for meal prep. Reheat until steaming hot."
+    ],
+    "image": "assets/healthy-beef-mcmuffins.jpg",
+    "schema_version": 2,
+    "ingredient_count": 9
+  },
+  {
+    "title": "Buffalo Chicken Crunchwraps",
+    "slug": "buffalo-chicken-crunchwraps",
+    "category": "Lunch",
+    "description": "Buffalo-ranch chicken, cool romaine, blue cheese and crunchy protein chips folded into a crisp, cheesy wrap. A fun two-serving lunch with serious protein.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CsRS7vKrm3e/"
+    },
+    "original_servings": 2,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 20,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "(8 oz) cooked chicken breast, shredded",
+        "quantity": 225,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "225 g (8 oz) cooked chicken breast, shredded"
+      },
+      {
+        "name": "(20 g) whipped cream cheese",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tbsp (20 g) whipped cream cheese"
+      },
+      {
+        "name": "(60 ml) Buffalo hot sauce",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "¼ cup (60 ml) Buffalo hot sauce"
+      },
+      {
+        "name": "ranch seasoning powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 tsp ranch seasoning powder"
+      },
+      {
+        "name": "each salt, black pepper and garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ tsp each salt, black pepper and garlic powder"
+      },
+      {
+        "name": "large flour tortillas",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 large flour tortillas"
+      },
+      {
+        "name": "shredded romaine lettuce",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup shredded romaine lettuce"
+      },
+      {
+        "name": "blue cheese crumbles",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tbsp blue cheese crumbles"
+      },
+      {
+        "name": "ranch-flavored protein chips, lightly crushed",
+        "quantity": 1,
+        "unit": "bag",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 bag ranch-flavored protein chips, lightly crushed"
+      },
+      {
+        "name": "(55 g) fat-free cheddar, shredded",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup (55 g) fat-free cheddar, shredded"
+      }
+    ],
+    "instructions": [
+      "Stir whipped cream cheese, Buffalo sauce, ranch powder, salt, pepper and garlic powder together until smooth.",
+      "Fold the shredded chicken into the Buffalo-ranch mixture until well coated.",
+      "Lay a tortilla flat. Add half the chicken in the center, then layer on romaine, blue cheese, crushed protein chips and cheddar.",
+      "Fold the tortilla edges inward over the filling, working around the circle to make a snug, pleated wrap. Repeat with the second tortilla.",
+      "Set each wrap seam-side down in a dry nonstick skillet over medium heat. Press gently and cook 2–3 minutes per side, until golden and crisp and the center is hot."
+    ],
+    "image": "assets/buffalo-chicken-crunchwrap-illustration.svg",
+    "schema_version": 2,
+    "ingredient_count": 10
+  },
+  {
+    "title": "Korean Beef Rice Bowls",
+    "slug": "korean-beef-rice-bowls",
+    "category": "Dinner",
+    "description": "Savory gochujang beef over fluffy rice, finished with a bright, spicy sriracha mayo. The beef reheats beautifully, so lunch is ready for the week.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CsY-pEGrXcN/"
+    },
+    "original_servings": 5,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 30,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "Bowls: 300 g dry basmati rice; 24 oz (680 g) 96% lean ground beef",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Bowls: 300 g dry basmati rice; 24 oz (680 g) 96% lean ground beef"
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 2,
+        "unit": "tsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "2 tsp sesame oil"
+      },
+      {
+        "name": "minced garlic",
+        "quantity": 1.5,
+        "unit": "tbsp",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1½ tbsp minced garlic"
+      },
+      {
+        "name": "brown sugar",
+        "quantity": 30,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "30 g brown sugar"
+      },
+      {
+        "name": "soy sauce (about ⅓ cup)",
+        "quantity": 80,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "80 g soy sauce (about ⅓ cup)"
+      },
+      {
+        "name": "gochujang (about 1 tbsp)",
+        "quantity": 20,
+        "unit": "g",
+        "optional": false,
+        "scalable": true,
+        "source_text": "20 g gochujang (about 1 tbsp)"
+      },
+      {
+        "name": "green onions, sliced; sesame seeds, to garnish",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "3 green onions, sliced; sesame seeds, to garnish"
+      },
+      {
+        "name": "Sriracha mayo: 90 g light mayo; 50 g sriracha; juice of ½ lemon (about 1 tbsp); ½ tsp garlic powder; 2 tbsp milk or water; salt to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Sriracha mayo: 90 g light mayo; 50 g sriracha; juice of ½ lemon (about 1 tbsp); ½ tsp garlic powder; 2 tbsp milk or water; salt to taste"
+      }
+    ],
+    "instructions": [
+      "Cook rice according to the package directions. The source uses 300 g uncooked rice, about 750 g cooked.",
+      "Whisk soy sauce, gochujang, brown sugar, minced garlic and sesame oil together.",
+      "Brown the beef in a large skillet over medium-high heat, breaking it into small crumbles. Drain excess fat if needed.",
+      "Pour the sauce over the beef and simmer 3–5 minutes, stirring, until glossy and cooked through. Fold in most of the green onions.",
+      "Whisk light mayo, sriracha, lemon juice, garlic powder and milk or water until drizzle-able. Season to taste.",
+      "Divide rice and beef among five bowls. Top with sriracha mayo, sesame seeds and the remaining green onion."
+    ],
+    "image": "assets/korean-beef-rice-bowl-illustration.svg",
+    "schema_version": 2,
+    "ingredient_count": 8
+  },
+  {
+    "title": "Maple Cinnamon Protein Smoothie",
+    "slug": "maple-cinnamon-protein-smoothie",
+    "category": "Drinks",
+    "description": "A creamy, frosty blend of banana, Greek yogurt and maple-cinnamon protein, finished with a quick maple drizzle. Breakfast or post-workout snack, sorted.",
+    "source": {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Dd9ac8poJrw/"
+    },
+    "original_servings": 1,
+    "prep_time_minutes": null,
+    "cook_time_minutes": null,
+    "total_time_minutes": 5,
+    "difficulty": null,
+    "estimated_fields": [],
+    "ingredients": [
+      {
+        "name": "frozen banana",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 frozen banana"
+      },
+      {
+        "name": "plain nonfat Greek yogurt",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "scalable": true,
+        "source_text": "½ cup plain nonfat Greek yogurt"
+      },
+      {
+        "name": "maple-cinnamon protein powder",
+        "quantity": 1,
+        "unit": "scoop",
+        "optional": false,
+        "scalable": true,
+        "source_text": "1 scoop maple-cinnamon protein powder"
+      },
+      {
+        "name": "½–1 cup cold water or milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "½–1 cup cold water or milk"
+      },
+      {
+        "name": "Ice, as needed",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Ice, as needed"
+      },
+      {
+        "name": "Cinnamon, to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Cinnamon, to taste"
+      },
+      {
+        "name": "Drizzle: 1 tsp maple syrup mixed with a pinch of cinnamon",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "scalable": false,
+        "source_text": "Drizzle: 1 tsp maple syrup mixed with a pinch of cinnamon"
+      }
+    ],
+    "instructions": [
+      "Add frozen banana, Greek yogurt, protein powder, cinnamon, ice and ½ cup water or milk to a blender.",
+      "Blend until smooth and creamy. Add more liquid a splash at a time until it reaches your favorite thickness.",
+      "Mix the maple syrup with a pinch of cinnamon.",
+      "Pour smoothie into a glass and drizzle the maple-cinnamon syrup over the top. Finish with a little extra cinnamon and enjoy."
+    ],
+    "image": "assets/maple-cinnamon-protein-smoothie-illustration.svg",
+    "schema_version": 2,
+    "ingredient_count": 7
   }
 ]

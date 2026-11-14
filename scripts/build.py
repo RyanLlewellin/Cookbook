@@ -73,6 +73,9 @@ def duration(value):
 def render(recipe, template):
     title = recipe["title"]
     image = safe_link(recipe.get("image"))
+    # Canonical image paths are root-relative to the repository so the homepage
+    # can use them directly. Generated recipe pages live two directories deep.
+    page_image = ("../../" + image if image and not urlsplit(image).scheme else image)
     source = recipe.get("source") or {}
     src = safe_link(source.get("url")) if isinstance(source, dict) else None
     original = recipe.get("original_servings")
@@ -103,7 +106,7 @@ def render(recipe, template):
         "INSTRUCTIONS": instructions,
         "RECIPE_JSON": serialized,
         "IMAGE_HTML": ('<img class="hero-image" loading="lazy" src="' +
-                       escape(image) + '" alt="' + escape(title) + '">' if image else ""),
+                       escape(page_image) + '" alt="' + escape(title) + '">' if page_image else ""),
         "SOURCE_HTML": ('<p class="source">Original recipe: <a href="' +
                         escape(src) + '" rel="noopener noreferrer" target="_blank">' +
                         escape(src) + "</a></p>" if src else ""),

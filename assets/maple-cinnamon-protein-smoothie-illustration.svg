@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" role="img" aria-labelledby="title desc">
+  <title id="title">Maple cinnamon protein smoothie illustration</title><desc id="desc">A creamy cinnamon smoothie in a tall glass with banana slices, cinnamon and a maple drizzle.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f2dfbd"/><stop offset="1" stop-color="#d49a64"/></linearGradient><linearGradient id="drink" x2="0" y2="1"><stop stop-color="#fff0ca"/><stop offset="1" stop-color="#d89a50"/></linearGradient><linearGradient id="glass" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".58"/><stop offset=".48" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".5"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="12"/></filter></defs>
+  <rect width="500" height="640" rx="28" fill="url(#bg)"/><circle cx="83" cy="126" r="70" fill="#fff8e8" opacity=".28"/><circle cx="424" cy="481" r="88" fill="#f9e6c9" opacity=".25"/>
+  <ellipse cx="250" cy="536" rx="126" ry="24" fill="#644323" opacity=".22" filter="url(#s)"/><path d="M146 173h208l-21 334q-2 25-26 25H193q-24 0-26-25Z" fill="url(#glass)" stroke="#fffdf3" stroke-width="7"/><path d="M158 261h184l-14 240q-1 15-18 15H193q-17 0-18-15Z" fill="url(#drink)"/>
+  <ellipse cx="250" cy="260" rx="92" ry="22" fill="#f5d99e"/><ellipse cx="250" cy="258" rx="85" ry="16" fill="#fff0cc"/>
+  <path d="m290 139 48 4-60 134-27-11Z" fill="#9f5431"/><path d="m297 147 27 3-54 119-14-6Z" fill="#e6b36e"/>
+  <path d="M157 291c38 14 71-12 104 2 28 12 51 0 82-10l-2 35c-31 10-55 22-87 10-31-13-60 14-100 0Z" fill="#f7d99d" opacity=".9"/>
+  <g fill="#fff3d5" opacity=".85"><circle cx="190" cy="343" r="8"/><circle cx="307" cy="375" r="6"/><circle cx="221" cy="421" r="7"/><circle cx="280" cy="467" r="6"/><circle cx="321" cy="316" r="8"/></g>
+  <g fill="#d58e37" stroke="#b56b2b" stroke-width="4"><path d="M113 199c-17-25-5-54 20-62 10-4 25 2 35 13 22 24 19 50-4 66-19 13-39 6-51-17Z"/><path d="M361 220c-15-23-3-48 19-56 10-4 24 2 34 12 19 22 16 45-5 59-17 12-37 6-48-15Z"/></g>
+  <g fill="#f7dfaa"><ellipse cx="136" cy="180" rx="15" ry="25" transform="rotate(-30 136 180)"/><ellipse cx="394" cy="202" rx="14" ry="22" transform="rotate(-30 394 202)"/></g>
+  <g fill="#8e4828"><circle cx="211" cy="263" r="3"/><circle cx="242" cy="252" r="3"/><circle cx="281" cy="260" r="3"/><circle cx="177" cy="300" r="4"/><circle cx="312" cy="306" r="4"/></g>
+  <path d="M173 294c10 13 23 14 34 4s23-9 34 2 26 11 37 2 19-8 30-1" fill="none" stroke="#b86f2b" stroke-width="5" stroke-linecap="round"/><path d="M166 462c15 14 20 1 29 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+</svg>
