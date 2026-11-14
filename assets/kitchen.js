@@ -9,9 +9,9 @@
   const units = new Set([
     "g", "kg", "oz", "lb", "lbs", "ml", "l", "cup", "cups", "tbsp", "tsp",
     "can", "cans", "jar", "jars", "bag", "bags", "box", "boxes", "bottle",
-    "bottles", "package", "packages", "loaf", "loaves", "ear", "ears", "stick",
-    "sticks", "bunch", "bunches", "pack", "packs", "packet", "packets", "dozen",
-    "piece", "pieces",
+    "bottles", "package", "packages", "carton", "cartons", "canister", "canisters",
+    "loaf", "loaves", "ear", "ears", "stick", "sticks", "bunch", "bunches",
+    "pack", "packs", "packet", "packets", "dozen", "piece", "pieces",
   ]);
   const fridgeWords = [
     "milk", "cream", "yogurt", "cheese", "egg", "butter", "chicken", "beef",
@@ -45,13 +45,16 @@
     return fridgeWords.some(word => value.includes(word)) ? "fridge" : "pantry";
   };
   const sanitizeItem = raw => {
-    const name = cleanName(raw && raw.name);
+    let name = cleanName(raw && raw.name);
     if (!name) return null;
+    let unit = cleanUnit(raw.unit);
+    const legacyContainer = !unit && name.match(/^(carton|canister)\s+(.+)$/i);
+    if (legacyContainer) { unit = legacyContainer[1].toLowerCase(); name = cleanName(legacyContainer[2]); }
     return {
       id: cleanName(raw.id) || id(),
       name,
       quantity: positive(raw.quantity),
-      unit: cleanUnit(raw.unit),
+      unit,
       location: raw.location === "fridge" ? "fridge" : raw.location === "pantry" ? "pantry" : inferLocation(name),
       note: String(raw.note || "").trim().slice(0, 180),
       updatedAt: Number(raw.updatedAt) || Date.now(),
