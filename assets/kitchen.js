@@ -8,8 +8,10 @@
   const MAX_SNAPSHOTS = 30;
   const units = new Set([
     "g", "kg", "oz", "lb", "lbs", "ml", "l", "cup", "cups", "tbsp", "tsp",
-    "can", "cans", "jar", "jars", "bag", "bags", "box", "boxes", "bunch",
-    "bunches", "pack", "packs", "dozen", "piece", "pieces",
+    "can", "cans", "jar", "jars", "bag", "bags", "box", "boxes", "bottle",
+    "bottles", "package", "packages", "loaf", "loaves", "ear", "ears", "stick",
+    "sticks", "bunch", "bunches", "pack", "packs", "packet", "packets", "dozen",
+    "piece", "pieces",
   ]);
   const fridgeWords = [
     "milk", "cream", "yogurt", "cheese", "egg", "butter", "chicken", "beef",

@@ -54,6 +54,8 @@ class CookbookTests(unittest.TestCase):
             page = render(recipe, template)
             self.assertIn("assets/recipe.js", page)
             self.assertIn('id="recipe-data"', page)
+            self.assertIn('href="../../pantry/"', page)
+            self.assertIn('Fridge &amp; pantry', page)
             self.assertIn('option value="10"', page)
             self.assertIn('option value="1"', page)
             self.assertIn(html.escape(recipe["title"]), page)
