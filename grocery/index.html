@@ -1,125 +1,58 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4ee"><title>Grocery List | Cyan’s Cookbook</title>
-<style>
-:root{font-family:system-ui,-apple-system,sans-serif;color:#242c26;background:#f7f4ee}*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.shell{max-width:1050px;margin:auto;padding:0 24px}header{background:#fffdf8;border-bottom:1px solid #e2e1d9}.cyan-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding-top:19px;padding-bottom:19px}.cyan-nav a{text-decoration:none}.cyan-back{justify-self:start;display:inline-flex;align-items:center;gap:8px;color:#294e3b;font-size:.91rem;font-weight:650;white-space:nowrap}.cyan-title{justify-self:center;font-family:Georgia,serif;font-size:clamp(1.1rem,3vw,1.55rem);font-weight:700;white-space:nowrap;color:#242c26}.cyan-cart{justify-self:end;display:inline-flex;align-items:center;gap:5px;background:#e7ede3;border:1px solid #cbd9ca;border-radius:999px;padding:9px 12px;color:#294e3b;font-weight:650;font-size:.85rem;white-space:nowrap}@media(max-width:560px){.cyan-nav{gap:5px}.back-label,.cart-label{display:none}.cyan-back{font-size:1.7rem}.cyan-cart{padding:9px 11px}.cyan-title{font-size:1.22rem}}main{padding-top:46px;padding-bottom:90px}.eyebrow{font-size:.76rem;color:#9b6548;text-transform:uppercase;letter-spacing:.14em;font-weight:800}h1{font:500 clamp(2.6rem,7vw,4.4rem) Georgia,serif;margin:14px 0}.lead,.muted{color:#65736a;line-height:1.6}.panel{margin:28px 0;background:white;border:1px solid #e2e1d9;border-radius:18px;padding:26px}.toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.btn{background:#e7ede3;color:#294e3b;border:1px solid #cbd9ca;border-radius:10px;padding:11px 14px;font-weight:650}.danger{background:#fff3ef;border-color:#eed2c8;color:#a64b33}.item{display:flex;gap:14px;align-items:flex-start;padding:17px 0;border-bottom:1px solid #e5e8e1}.item:last-child{border:0}.item input{height:23px;width:23px;accent-color:#294e3b;flex:none;margin:2px 0}.item label{flex:1;cursor:pointer;min-width:0}.item strong{font-size:1.06rem}.item small{display:block;margin-top:5px;color:#69766e;line-height:1.5}.item.checked strong{text-decoration:line-through;color:#89968d}.empty{padding:44px 20px;text-align:center;color:#68746c;border:1px dashed #cbd5ca;border-radius:16px}.empty a{font-weight:700;color:#294e3b;text-decoration:underline}.count{font-size:.9rem;color:#65736a;margin:15px 0}.meals{color:#65736a;font-size:.9rem;margin:8px 0 0}.meal-options{margin:16px 0 20px;display:grid;gap:10px}.meal-setting{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#f7f8f4;border:1px solid #e1e6dd;padding:12px 14px;border-radius:12px}.meal-setting label{font-weight:650;font-size:.92rem}.meal-setting select{font:inherit;border:1px solid #ccd7ca;border-radius:9px;padding:9px 12px;background:white;color:#294e3b;max-width:105px}.meal-setting small{display:block;color:#68746c;font-weight:400;margin-top:4px}@media(max-width:550px){main{padding-top:30px}.panel{padding:18px}}
-.swipe-wrap{position:relative;overflow:hidden;border-bottom:1px solid #e5e8e1;touch-action:pan-y}.swipe-wrap:last-child{border-bottom:0}.item{position:relative;z-index:1;background:white;border-bottom:0;align-items:center;transition:transform .18s ease;touch-action:pan-y}.item.swiped{transform:translateX(-88px)}.item label{display:block}.quantity{display:block;font-size:.9rem;font-weight:700;color:#294e3b;margin-top:4px}.item.checked .quantity{text-decoration:line-through;color:#89968d}.item-delete{position:absolute;right:0;top:0;bottom:0;width:88px;background:#b84a36;border:0;color:white;font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px}.desktop-delete{align-self:center;border:0;background:transparent;color:#a64b33;padding:9px;font-size:1.25rem;border-radius:8px}.desktop-delete:focus-visible,.item-delete:focus-visible{outline:3px solid #222;outline-offset:-3px}@media(hover:none) and (pointer:coarse){.desktop-delete{display:none}}@media(hover:hover){.item-delete{display:none}.item.swiped{transform:none}}@media(prefers-reduced-motion:reduce){.item{transition:none}}</style></head><body>
-<header><div class="shell cyan-nav"><a class="cyan-back" href="../" aria-label="Back to all recipes"><span aria-hidden="true">←</span><span class="back-label">All recipes</span></a><a class="cyan-title" href="../">Cyan’s Cookbook</a><a class="cyan-cart" href="../grocery/" aria-label="Open grocery list">🛒 <span class="cart-label">Grocery list</span></a></div></header>
-<main class="shell"><span class="eyebrow">Shopping made simple</span><h1>Grocery list</h1><p class="lead">Everything you need for your selected recipes, organized into one checklist. Check off items as you shop. Swipe left on an item to reveal Delete, or use its trash button.</p>
-<section class="panel" aria-label="Your grocery checklist"><div class="toolbar"><div id="summary" class="count" aria-live="polite"></div><div class="actions"><button type="button" class="btn" id="copy">Copy list</button><button type="button" class="btn danger" id="clear" aria-label="Clear all grocery items">🗑 Clear all</button></div></div><div id="meal-options" class="meal-options"></div><div id="items"></div><p id="meals" class="meals"></p></section>
-<p class="muted"><a href="../pantry/" style="color:#294e3b;font-weight:700">← Add more meals from What Can I Make?</a></p></main>
-<script>
-(async()=>{
-const slug=s=>String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const norm=s=>String(s).toLowerCase().trim().replace(/\([^)]*\)/g,'').replace(/^\s*[\d\s./¼½¾⅓⅔-]+\s*/,'').replace(/^(?:cups?|tbsp|tsp|tablespoons?|teaspoons?|grams?|g|oz|lbs?|cloves?|cans?|pieces?)\s+/,'').replace(/^(?:of\s+)/,'').trim();
-const ingredientName=s=>norm(s).replace(/^.*?\b(?:of)\s+/,'').replace(/\s*,.*$/,'').trim();
-const loadSet=key=>{try{const value=JSON.parse(localStorage.getItem(key)||'[]');return new Set(Array.isArray(value)?value:[])}catch{return new Set()}};
-const recipeId=r=>slug(r.category||'recipe')+'/'+slug(r.slug||r.title);
-const servingsKey='cookbook-recipe-servings';
-const getServings=()=>{try{const data=JSON.parse(localStorage.getItem(servingsKey)||'{}');return data&&typeof data==='object'&&!Array.isArray(data)?data:{}}catch{return {}}};
-let servings=getServings();
-const selectedServings=r=>{
-const detailed=details.find(d=>recipeId(d)===recipeId(r));
-const original=Number(detailed?.original_servings)||2;
-const n=Number(servings[recipeId(r)]);
-return Number.isInteger(n)&&n>=1&&n<=10?n:Math.min(10,Math.max(1,original))
-};
-const saveServings=(r,n)=>{servings[recipeId(r)]=n;try{localStorage.setItem(servingsKey,JSON.stringify(servings))}catch{}};
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <title>Grocery List | Cyan’s Cookbook</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,sans-serif;color:#242c26;background:#f7f4ee;--green:#294e3b;--terracotta:#b96b43;--line:#e2e1d9;--muted:#65736a}*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1050px;margin:auto;padding:0 24px}header{background:#fffdf8;border-bottom:1px solid var(--line)}.cyan-nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding-top:19px;padding-bottom:19px}.cyan-back{justify-self:start;display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:.91rem;font-weight:650;white-space:nowrap}.cyan-title{justify-self:center;font-family:Georgia,serif;font-size:clamp(1.1rem,3vw,1.55rem);font-weight:700;white-space:nowrap}.cyan-kitchen{justify-self:end;display:inline-flex;align-items:center;gap:5px;background:#e7ede3;border:1px solid #cbd9ca;border-radius:999px;padding:9px 12px;color:var(--green);font-weight:650;font-size:.85rem;white-space:nowrap}main{padding:46px 0 90px}.eyebrow{font-size:.75rem;color:#9b6548;text-transform:uppercase;letter-spacing:.14em;font-weight:800}h1,h2{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(2.7rem,7vw,4.6rem);line-height:1;margin:14px 0}.lead,.muted{color:var(--muted);line-height:1.6}.lead{max-width:710px}.panel{margin:24px 0;background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.btn{background:#e7ede3;color:var(--green);border:1px solid #cbd9ca;border-radius:10px;padding:11px 14px;font-weight:700}.btn.primary{background:var(--green);border-color:var(--green);color:white}.btn.danger{background:#fff3ef;border-color:#eed2c8;color:#a64b33}.add-form{display:grid;grid-template-columns:minmax(180px,2fr) 90px 90px 120px auto;gap:9px;margin-top:16px}.field{border:1px solid #ccd5cc;background:#fffdf8;border-radius:10px;padding:11px;min-width:0}.bulk{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end;margin-top:14px}.bulk textarea{min-height:100px;resize:vertical}.bulk-actions{display:grid;gap:9px}.count{font-size:.9rem;color:var(--muted)}.meal-options{margin:16px 0 20px;display:grid;gap:10px}.meal-setting{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#f7f8f4;border:1px solid #e1e6dd;padding:12px 14px;border-radius:12px}.meal-setting label{font-weight:650;font-size:.92rem}.meal-setting select{font:inherit;border:1px solid #ccd7ca;border-radius:9px;padding:9px 12px;background:white;color:var(--green);max-width:112px}.list{margin-top:8px}.item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:17px 0;border-bottom:1px solid #e5e8e1}.item:last-child{border:0}.item input{height:23px;width:23px;accent-color:var(--green);margin:0}.item label{cursor:pointer;min-width:0}.item strong{font-size:1.04rem}.item small,.quantity{display:block;margin-top:4px;line-height:1.45}.item small{color:#69766e}.quantity{font-size:.9rem;font-weight:750;color:var(--green)}.item.checked strong,.item.checked .quantity{text-decoration:line-through;color:#89968d}.delete{border:0;background:transparent;color:#a64b33;padding:9px;font-size:1.15rem;border-radius:8px}.empty{padding:42px 20px;text-align:center;color:#68746c;border:1px dashed #cbd5ca;border-radius:16px}.empty a{font-weight:700;color:var(--green);text-decoration:underline}.put-away{background:#edf3e9;border:1px solid #cbd9ca;border-radius:16px;padding:18px 20px;margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:14px}.put-away strong{display:block}.put-away span{display:block;color:#53665a;font-size:.88rem;margin-top:3px}.toast{position:fixed;right:20px;bottom:20px;background:#243d30;color:white;padding:13px 16px;border-radius:12px;box-shadow:0 8px 28px #0003;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:none}footer{border-top:1px solid var(--line);padding:24px 0;color:#718076}
+    @media(max-width:760px){.add-form{grid-template-columns:1fr 90px}.add-form button{grid-column:1/-1}.bulk{grid-template-columns:1fr}.bulk-actions{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.cyan-nav{gap:5px}.back-label,.kitchen-label{display:none}.cyan-back{font-size:1.7rem}.cyan-kitchen{padding:9px 11px}.cyan-title{font-size:1.22rem}main{padding-top:30px}.panel{padding:18px}.bulk-actions{grid-template-columns:1fr}.put-away{align-items:flex-start;flex-direction:column}.put-away .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <header><div class="shell cyan-nav"><a class="cyan-back" href="../" aria-label="Back to all recipes"><span aria-hidden="true">←</span><span class="back-label">All recipes</span></a><a class="cyan-title" href="../">Cyan’s Cookbook</a><a class="cyan-kitchen" href="../pantry/" aria-label="Open fridge and pantry">🏺 <span class="kitchen-label">My kitchen</span></a></div></header>
+  <main class="shell">
+    <span class="eyebrow">Shopping made simple</span><h1>Grocery list</h1><p class="lead">Combine missing recipe ingredients with anything else you need. Check items off at the store, then put the checked groceries straight into your fridge and pantry.</p>
 
-const pantry=loadSet('cookbook-pantry'),planned=loadSet('cookbook-grocery-meals'),checked=loadSet('cookbook-grocery-checked'),deleted=loadSet('cookbook-grocery-deleted');
-let recipes=[],details=[];
-try{
-const [summary,source]=await Promise.all([fetch('../recipes.json'),fetch('../data/recipes.json')]);
-if(!summary.ok)throw Error();
-recipes=await summary.json();
-if(!Array.isArray(recipes))throw Error();
-if(source.ok){const data=await source.json();if(Array.isArray(data))details=data}
-}catch{document.querySelector('#items').textContent='Could not load recipes. Please refresh.';return}
-const save=()=>{try{
-localStorage.setItem('cookbook-grocery-meals',JSON.stringify([...planned]));
-localStorage.setItem('cookbook-grocery-checked',JSON.stringify([...checked]));
-localStorage.setItem('cookbook-grocery-deleted',JSON.stringify([...deleted]))
-}catch{}};
-const number=n=>Number.isInteger(n)?String(n):String(Math.round(n*100)/100);
-const quantityText=parts=>{
-if(!parts.length)return 'Amount not specified';
-const grouped=new Map();
-for(const p of parts){
-const unit=String(p.unit||'').toLowerCase().trim();
-if(p.quantity==null||!Number.isFinite(Number(p.quantity))){const note=p.note||'Amount not specified';grouped.set('note:'+note,note);continue}
-const quantity=Number(p.quantity),key='unit:'+unit;
-grouped.set(key,(grouped.get(key)||0)+quantity)
-}
-return [...grouped].map(([key,value])=>key.startsWith('unit:')?number(value)+(key.slice(5)?' '+key.slice(5):''):value).join(' + ')
-};
-const build=()=>{
-const meals=recipes.filter(r=>planned.has(recipeId(r))),map=new Map();
-for(const r of meals){
-const d=details.find(d=>recipeId(d)===recipeId(r));
-const entries=d&&Array.isArray(d.ingredients)?d.ingredients:(r.ingredients||[]).map(name=>({name,quantity:null,unit:''}));
-for(const entry of entries){
-const name=ingredientName(typeof entry==='string'?entry:entry.name);
-if(!name||pantry.has(name)||deleted.has(name))continue;
-if(!map.has(name))map.set(name,{meals:new Set(),parts:[]});
-const item=map.get(name);item.meals.add(r.title);
-if(typeof entry==='object'){
-const original=Number(d?.original_servings);
-const shouldScale=entry.scalable!==false&&typeof entry.quantity==='number'&&Number.isFinite(original)&&original>0;
-item.parts.push({quantity:shouldScale?entry.quantity*selectedServings(r)/original:entry.quantity,unit:entry.unit,note:entry.note});
-}
-}
-}
-return {meals,lines:[...map].sort((a,b)=>a[0].localeCompare(b[0]))}
-};
-function removeItem(name){deleted.add(name);checked.delete(name);save();render()}
-function render(){
-const {meals,lines}=build(),container=document.querySelector('#items');container.replaceChildren();
-const options=document.querySelector('#meal-options');options.replaceChildren();
-for(const r of meals){
-const row=document.createElement('div');row.className='meal-setting';
-const label=document.createElement('label');label.textContent=r.title;
-const select=document.createElement('select');select.setAttribute('aria-label','Servings for '+r.title);
-select.id='servings-'+recipeId(r).replace(/[^a-z0-9-]/g,'-');label.htmlFor=select.id;
-for(let n=1;n<=10;n++){const choice=document.createElement('option');choice.value=String(n);choice.textContent=n+' '+(n===1?'serving':'servings');if(n===selectedServings(r))choice.selected=true;select.append(choice)}
-select.onchange=()=>{saveServings(r,Number(select.value));render()};
-row.append(label,select);options.append(row)
-}
-document.querySelector('#summary').textContent=lines.length+' ingredients • '+meals.length+' meals • '+lines.filter(([name])=>checked.has(name)).length+' checked off';
-document.querySelector('#meals').textContent=meals.length?'Meals: '+meals.map(r=>r.title).join(', '):'';
-if(!lines.length){
-const empty=document.createElement('div');empty.className='empty';
-empty.textContent=meals.length?'No grocery items remaining.':'Your grocery list is empty. ';
-if(!meals.length){const link=document.createElement('a');link.href='../pantry/';link.textContent='Find recipes to add.';empty.append(link)}
-container.append(empty);return
-}
-lines.forEach(([name,info])=>{
-const wrap=document.createElement('div');wrap.className='swipe-wrap';
-const swipeDelete=document.createElement('button');swipeDelete.className='item-delete';swipeDelete.type='button';swipeDelete.textContent='🗑 Delete';swipeDelete.setAttribute('aria-label','Delete '+name);swipeDelete.onclick=()=>removeItem(name);
-const row=document.createElement('div');row.className='item'+(checked.has(name)?' checked':'');
-const cb=document.createElement('input');cb.type='checkbox';cb.id='item-'+slug(name);cb.checked=checked.has(name);cb.onchange=()=>{cb.checked?checked.add(name):checked.delete(name);save();render()};
-const label=document.createElement('label');label.htmlFor=cb.id;
-const strong=document.createElement('strong');strong.textContent=name;
-const quantity=document.createElement('span');quantity.className='quantity';quantity.textContent=quantityText(info.parts);
-const small=document.createElement('small');small.textContent='For: '+[...info.meals].join(', ');
-label.append(strong,quantity,small);
-const deleteBtn=document.createElement('button');deleteBtn.type='button';deleteBtn.className='desktop-delete';deleteBtn.textContent='🗑';deleteBtn.setAttribute('aria-label','Delete '+name);deleteBtn.onclick=()=>removeItem(name);
-row.append(cb,label,deleteBtn);wrap.append(swipeDelete,row);container.append(wrap);
-let startX=0,startY=0,tracking=false;
-row.addEventListener('touchstart',e=>{if(e.touches.length!==1)return;startX=e.touches[0].clientX;startY=e.touches[0].clientY;tracking=true},{passive:true});
-row.addEventListener('touchend',e=>{if(!tracking||!e.changedTouches.length)return;tracking=false;const dx=e.changedTouches[0].clientX-startX,dy=e.changedTouches[0].clientY-startY;
-if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4){container.querySelectorAll('.item.swiped').forEach(x=>{if(x!==row)x.classList.remove('swiped')});row.classList.toggle('swiped',dx<0)}
-},{passive:true});
-});
-}
-document.querySelector('#clear').onclick=()=>{
-if(!planned.size&&!checked.size&&!deleted.size)return;
-if(!confirm('Clear the entire grocery list and remove selected meals?'))return;
-planned.clear();checked.clear();deleted.clear();save();render()
-};
-document.querySelector('#copy').onclick=async()=>{
-const {lines}=build();if(!lines.length)return;
-const content='Cyan’s Cookbook grocery list\n'+lines.map(([name,info])=>(checked.has(name)?'☑ ':'☐ ')+name+' — '+quantityText(info.parts)+' (for: '+[...info.meals].join(', ')+')').join('\n');
-try{await navigator.clipboard.writeText(content);const btn=document.querySelector('#copy');btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy list',1800)}catch{alert('Unable to copy list.')}
-};
-window.addEventListener('storage',e=>{if(e.key===servingsKey)servings=getServings();render()});render();
-})();
-</script></body></html>
+    <section class="panel" aria-labelledby="add-title"><div class="toolbar"><div><span class="eyebrow">Quick add</span><h2 id="add-title" style="margin:6px 0 0">Add anything</h2></div></div><form class="add-form" id="add-form"><input class="field" id="item-name" required placeholder="Grocery item" aria-label="Grocery item"><input class="field" id="item-quantity" type="number" min="0.01" step="0.01" value="1" aria-label="Quantity"><input class="field" id="item-unit" placeholder="Unit" aria-label="Unit"><select class="field" id="item-location" aria-label="Put away in"><option value="fridge">Fridge</option><option value="pantry">Pantry</option></select><button class="btn primary" type="submit">Add to list</button></form></section>
+
+    <section class="panel" aria-labelledby="list-title"><div class="toolbar"><div><span class="eyebrow">One list</span><h2 id="list-title" style="margin:6px 0">Ready to shop</h2><div id="summary" class="count" aria-live="polite"></div></div><div class="actions"><button type="button" class="btn" id="copy">Copy list</button><button type="button" class="btn danger" id="clear">Clear all</button></div></div><div id="meal-options" class="meal-options"></div><div id="items" class="list"></div><div class="put-away" id="put-away"><div><strong>Back from the store?</strong><span id="put-away-help">Check the groceries you bought, then add them to your kitchen.</span></div><button class="btn primary" id="put-away-button" type="button">Put checked items away</button></div></section>
+
+    <section class="panel" aria-labelledby="haul-title"><span class="eyebrow">Skip the checklist</span><h2 id="haul-title" style="margin:6px 0">Paste the haul you just bought</h2><p class="muted">One item per line. Add “| fridge” or “| pantry” to override the suggested location.</p><div class="bulk"><textarea class="field" id="haul-input" placeholder="milk | fridge&#10;2 lb chicken | fridge&#10;3 cans tomatoes | pantry"></textarea><div class="bulk-actions"><button class="btn" id="haul-to-list" type="button">Add to grocery list</button><button class="btn primary" id="haul-put-away" type="button">Put this haul away</button></div></div></section>
+
+    <p class="muted"><a href="../pantry/" style="color:#294e3b;font-weight:700">← View fridge, pantry, snapshots & recipe matches</a></p>
+  </main>
+  <footer><div class="shell">Cyan’s Cookbook · Your recipes, your way.</div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../assets/kitchen.js"></script>
+  <script>
+  (async()=>{
+    const K=window.CookbookKitchen,slug=s=>String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    const loadSet=key=>{try{const value=JSON.parse(localStorage.getItem(key)||'[]');return new Set(Array.isArray(value)?value:[])}catch{return new Set()}};
+    const recipeId=r=>slug(r.category||'recipe')+'/'+slug(r.slug||r.title),plannedKey='cookbook-grocery-meals',checkedKey='cookbook-grocery-checked-v2',deletedKey='cookbook-grocery-deleted';
+    const servingsKey='cookbook-recipe-servings';let planned=loadSet(plannedKey),checked=loadSet(checkedKey),deleted=loadSet(deletedKey),recipes=[],details=[];
+    const toast=message=>{const el=document.querySelector('#toast');el.textContent=message;el.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('show'),1800)};
+    const getServings=()=>{try{const data=JSON.parse(localStorage.getItem(servingsKey)||'{}');return data&&typeof data==='object'&&!Array.isArray(data)?data:{}}catch{return {}}};let servings=getServings();
+    const save=()=>{try{localStorage.setItem(plannedKey,JSON.stringify([...planned]));localStorage.setItem(checkedKey,JSON.stringify([...checked]));localStorage.setItem(deletedKey,JSON.stringify([...deleted]))}catch{}};
+    try{const [summary,source]=await Promise.all([fetch('../recipes.json'),fetch('../data/recipes.json')]);if(!summary.ok)throw Error();recipes=await summary.json();if(source.ok)details=await source.json()}catch{document.querySelector('#items').textContent='Could not load recipes. Please refresh.';return}
+    const ingredientName=s=>K.normalize(String(s).replace(/^\s*[\d\s./¼½¾⅓⅔-]+\s*/, '').replace(/^(?:cups?|tbsp|tsp|tablespoons?|teaspoons?|grams?|g|oz|lbs?|cloves?|cans?|pieces?)\s+/i,''));
+    const selectedServings=r=>{const d=details.find(item=>recipeId(item)===recipeId(r)),original=Number(d&&d.original_servings)||2,n=Number(servings[recipeId(r)]);return Number.isInteger(n)&&n>=1&&n<=10?n:Math.min(10,Math.max(1,original))};
+    const number=n=>Number.isInteger(n)?String(n):String(Math.round(n*100)/100);
+    const quantityText=parts=>{if(!parts.length)return'1';const grouped=new Map();for(const part of parts){const unit=String(part.unit||'').toLowerCase().trim();if(part.quantity==null||!Number.isFinite(Number(part.quantity))){const note=part.note||'Amount not specified';grouped.set('note:'+note,note);continue}const key='unit:'+unit;grouped.set(key,(grouped.get(key)||0)+Number(part.quantity))}return[...grouped].map(([key,value])=>key.startsWith('unit:')?number(value)+(key.slice(5)?' '+key.slice(5):''):value).join(' + ')};
+    function build(){const pantry=new Set(K.loadInventory().map(item=>K.normalize(item.name))),meals=recipes.filter(r=>planned.has(recipeId(r))),map=new Map();for(const r of meals){const d=details.find(item=>recipeId(item)===recipeId(r)),entries=d&&Array.isArray(d.ingredients)?d.ingredients:(r.ingredients||[]).map(name=>({name,quantity:null,unit:''}));for(const entry of entries){const name=ingredientName(typeof entry==='string'?entry:entry.name);if(!name||pantry.has(name)||deleted.has(name))continue;if(!map.has(name))map.set(name,{key:'recipe:'+name,name,meals:new Set(),parts:[],location:K.inferLocation(name),kind:'recipe'});const item=map.get(name);item.meals.add(r.title);if(typeof entry==='object'){const original=Number(d&&d.original_servings),scale=entry.scalable!==false&&typeof entry.quantity==='number'&&Number.isFinite(original)&&original>0;item.parts.push({quantity:scale?entry.quantity*selectedServings(r)/original:entry.quantity,unit:entry.unit,note:entry.note})}}}const custom=K.loadCustomGroceries().map(item=>({key:'custom:'+item.id,name:item.name,parts:[{quantity:item.quantity,unit:item.unit}],location:item.location,kind:'custom',id:item.id,meals:new Set()}));return{meals,lines:[...map.values(),...custom].sort((a,b)=>a.name.localeCompare(b.name))}}
+    function asInventoryItems(line){if(line.kind==='custom')return[{name:line.name,quantity:line.parts[0].quantity,unit:line.parts[0].unit,location:line.location}];const numeric=line.parts.filter(part=>part.quantity!=null&&Number.isFinite(Number(part.quantity)));if(numeric.length&&numeric.every(part=>String(part.unit||'')===String(numeric[0].unit||'')))return[{name:line.name,quantity:numeric.reduce((sum,part)=>sum+Number(part.quantity),0),unit:numeric[0].unit||'',location:line.location}];return[{name:line.name,quantity:1,unit:'',location:line.location,note:quantityText(line.parts)}]}
+    function removeLine(line){if(line.kind==='custom')K.removeCustomGrocery(line.id);else{deleted.add(line.name);save()}checked.delete(line.key);render();toast('Removed '+line.name)}
+    function render(){const {meals,lines}=build(),container=document.querySelector('#items'),options=document.querySelector('#meal-options');container.replaceChildren();options.replaceChildren();for(const r of meals){const row=document.createElement('div');row.className='meal-setting';const label=document.createElement('label');label.textContent=r.title;const select=document.createElement('select');select.setAttribute('aria-label','Servings for '+r.title);for(let n=1;n<=10;n++){const option=document.createElement('option');option.value=String(n);option.textContent=n+' '+(n===1?'serving':'servings');if(n===selectedServings(r))option.selected=true;select.append(option)}select.onchange=()=>{servings[recipeId(r)]=Number(select.value);localStorage.setItem(servingsKey,JSON.stringify(servings));render()};row.append(label,select);options.append(row)}const checkedCount=lines.filter(line=>checked.has(line.key)).length;document.querySelector('#summary').textContent=lines.length+' items · '+meals.length+' planned meals · '+checkedCount+' checked';document.querySelector('#put-away-help').textContent=checkedCount?checkedCount+' checked '+(checkedCount===1?'item is':'items are')+' ready to add to your kitchen.':'Check the groceries you bought, then add them to your kitchen.';document.querySelector('#put-away-button').disabled=!checkedCount;if(!lines.length){container.innerHTML='<div class="empty">Your grocery list is empty. <a href="../pantry/">Find a recipe or add kitchen items.</a></div>';return}lines.forEach(line=>{const row=document.createElement('div');row.className='item'+(checked.has(line.key)?' checked':'');const box=document.createElement('input');box.type='checkbox';box.id='item-'+slug(line.key);box.checked=checked.has(line.key);box.onchange=()=>{box.checked?checked.add(line.key):checked.delete(line.key);save();render()};const label=document.createElement('label');label.htmlFor=box.id;const name=document.createElement('strong');name.textContent=line.name;const quantity=document.createElement('span');quantity.className='quantity';quantity.textContent=quantityText(line.parts);const note=document.createElement('small');note.textContent=line.kind==='recipe'?'For: '+[...line.meals].join(', '):'Put away in: '+line.location;label.append(name,quantity,note);const remove=document.createElement('button');remove.type='button';remove.className='delete';remove.textContent='🗑';remove.setAttribute('aria-label','Remove '+line.name);remove.onclick=()=>removeLine(line);row.append(box,label,remove);container.append(row)})}
+    document.querySelector('#add-form').onsubmit=event=>{event.preventDefault();const name=document.querySelector('#item-name').value.trim();if(!name)return;K.addCustomGrocery({name,quantity:document.querySelector('#item-quantity').value,unit:document.querySelector('#item-unit').value,location:document.querySelector('#item-location').value});event.target.reset();document.querySelector('#item-quantity').value='1';render();toast('Added '+name)};
+    document.querySelector('#put-away-button').onclick=()=>{const {lines}=build(),bought=lines.filter(line=>checked.has(line.key));if(!bought.length)return;K.putAway(bought.flatMap(asInventoryItems),'Shopping haul added');for(const line of bought){if(line.kind==='custom')K.removeCustomGrocery(line.id);else deleted.add(line.name);checked.delete(line.key)}save();render();toast('Kitchen updated with '+bought.length+' items')};
+    document.querySelector('#haul-to-list').onclick=()=>{const input=document.querySelector('#haul-input'),items=K.parseList(input.value);if(!items.length)return;items.forEach(K.addCustomGrocery);input.value='';render();toast('Added '+items.length+' groceries')};
+    document.querySelector('#haul-put-away').onclick=()=>{const input=document.querySelector('#haul-input'),items=K.parseList(input.value);if(!items.length)return;K.putAway(items,'Pasted shopping haul');input.value='';render();toast('Put away '+items.length+' items')};
+    document.querySelector('#clear').onclick=()=>{const {lines}=build();if(!lines.length)return;if(!confirm('Clear every grocery and planned meal?'))return;planned.clear();checked.clear();deleted.clear();K.saveCustomGroceries([]);save();render();toast('Grocery list cleared')};
+    document.querySelector('#copy').onclick=async()=>{const {lines}=build();if(!lines.length)return;const content='Cyan’s Cookbook grocery list\n'+lines.map(line=>(checked.has(line.key)?'☑ ':'☐ ')+line.name+' — '+quantityText(line.parts)).join('\n');try{await navigator.clipboard.writeText(content);toast('Grocery list copied')}catch{alert(content)}};
+    window.addEventListener('storage',render);render();
+  })();
+  </script>
+</body>
+</html>

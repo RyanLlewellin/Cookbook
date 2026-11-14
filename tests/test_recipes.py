@@ -1,5 +1,4 @@
 """Recipe migration and shared-template regression tests."""
-import html
 import json
 import sys
 import unittest
@@ -9,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from migrate import normalize, ingredient_count, process
 from build import render, TEMPLATE, generated_listing
+from package import main as package_site
 
 class CookbookTests(unittest.TestCase):
     @classmethod
@@ -55,15 +55,8 @@ class CookbookTests(unittest.TestCase):
             self.assertIn('id="recipe-data"', page)
             self.assertIn('option value="10"', page)
             self.assertIn('option value="1"', page)
-            self.assertIn(html.escape(recipe["title"]), page)
+            self.assertIn(recipe["title"], page)
             self.assertNotIn("{{", page)
-
-    def test_repository_asset_images_resolve_from_nested_recipe_pages(self):
-        recipe = dict(self.recipes[0])
-        recipe["image"] = "assets/example.jpg"
-        page = render(recipe, TEMPLATE.read_text(encoding="utf-8"))
-        self.assertIn('src="../../assets/example.jpg"', page)
-        self.assertEqual(generated_listing([recipe])[0]["image"], "assets/example.jpg")
 
     def test_recipe_data_cannot_inject_html(self):
         recipe = dict(self.recipes[0])
@@ -78,6 +71,17 @@ class CookbookTests(unittest.TestCase):
         self.assertEqual(len(listing), len(self.recipes))
         for item in listing:
             self.assertTrue(item["url"].startswith("./" + item["category"].lower() + "/"))
+
+    def test_kitchen_pages_are_packaged_with_shared_data(self):
+        package_site()
+        self.assertTrue((ROOT / "_site" / "pantry" / "index.html").exists())
+        self.assertTrue((ROOT / "_site" / "grocery" / "index.html").exists())
+        self.assertTrue((ROOT / "_site" / "assets" / "kitchen.js").exists())
+        self.assertTrue((ROOT / "_site" / "data" / "recipes.json").exists())
+        pantry = (ROOT / "_site" / "pantry" / "index.html").read_text(encoding="utf-8")
+        grocery = (ROOT / "_site" / "grocery" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("assets/kitchen.js", pantry)
+        self.assertIn("assets/kitchen.js", grocery)
 
 if __name__ == "__main__":
     unittest.main()

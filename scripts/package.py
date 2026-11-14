@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a minimal GitHub Pages artifact (no source data, scripts or .git)."""
+"""Build a minimal GitHub Pages artifact (no scripts or .git)."""
 import json
 import shutil
 from pathlib import Path
@@ -13,10 +13,16 @@ def main():
     OUT.mkdir()
     shutil.copy2(ROOT / "index.html", OUT / "index.html")
     shutil.copy2(ROOT / "recipes.json", OUT / "recipes.json")
+    (OUT / "data").mkdir()
+    shutil.copy2(ROOT / "data" / "recipes.json", OUT / "data" / "recipes.json")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     source_assets = ROOT / "assets"
     if source_assets.exists():
         shutil.copytree(source_assets, OUT / "assets")
+    for page in ("pantry", "grocery"):
+        source_page = ROOT / page
+        if source_page.exists():
+            shutil.copytree(source_page, OUT / page)
     manifest = json.loads((ROOT / "data" / "generated_paths.json").read_text(encoding="utf-8"))
     for rel in manifest:
         src = ROOT / rel
