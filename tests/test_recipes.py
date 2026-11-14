@@ -1,5 +1,6 @@
 """Recipe migration and shared-template regression tests."""
 import json
+import html
 import sys
 import unittest
 from pathlib import Path
@@ -55,7 +56,7 @@ class CookbookTests(unittest.TestCase):
             self.assertIn('id="recipe-data"', page)
             self.assertIn('option value="10"', page)
             self.assertIn('option value="1"', page)
-            self.assertIn(recipe["title"], page)
+            self.assertIn(html.escape(recipe["title"]), page)
             self.assertNotIn("{{", page)
 
     def test_recipe_data_cannot_inject_html(self):
