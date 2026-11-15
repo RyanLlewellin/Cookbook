@@ -13,6 +13,7 @@
     "loaf", "loaves", "ear", "ears", "stick", "sticks", "bunch", "bunches",
     "pack", "packs", "packet", "packets", "dozen", "piece", "pieces",
   ]);
+  const freezerWords = ["frozen", "freezer", "ice cream", "popsicle"];
   const fridgeWords = [
     "milk", "cream", "yogurt", "cheese", "egg", "butter", "chicken", "beef",
     "pork", "fish", "salmon", "tofu", "lettuce", "spinach", "kale", "berry",
@@ -42,7 +43,7 @@
   };
   const inferLocation = name => {
     const value = normalize(name);
-    return fridgeWords.some(word => value.includes(word)) ? "fridge" : "pantry";
+    return freezerWords.some(word => value.includes(word)) ? "freezer" : fridgeWords.some(word => value.includes(word)) ? "fridge" : "pantry";
   };
   const sanitizeItem = raw => {
     let name = cleanName(raw && raw.name);
@@ -55,7 +56,7 @@
       name,
       quantity: positive(raw.quantity),
       unit,
-      location: raw.location === "fridge" ? "fridge" : raw.location === "pantry" ? "pantry" : inferLocation(name),
+      location: ["fridge", "freezer", "pantry"].includes(raw.location) ? raw.location : inferLocation(name),
       note: String(raw.note || "").trim().slice(0, 180),
       updatedAt: Number(raw.updatedAt) || Date.now(),
     };
@@ -168,7 +169,7 @@
       return items.map(item => {
         if (!item || typeof item.name !== "string" || !item.name.trim() ||
             !Number.isFinite(item.quantity) || item.quantity <= 0 ||
-            !["fridge", "pantry"].includes(item.location)) throw invalid();
+            !["fridge", "freezer", "pantry"].includes(item.location)) throw invalid();
         return sanitizeItem({ ...item, id: id() });
       });
     }
@@ -210,7 +211,7 @@
   function parseList(text) {
     return String(text || "").split(/[\n,;]+/).map(line => line.replace(/^[-*•✓\s]+/, "").trim()).filter(Boolean).slice(0, 150).map(line => {
       let location = null;
-      const locationMatch = line.match(/\s*\|\s*(fridge|pantry)\s*$/i);
+      const locationMatch = line.match(/\s*\|\s*(fridge|freezer|pantry)\s*$/i);
       if (locationMatch) {
         location = locationMatch[1].toLowerCase();
         line = line.slice(0, locationMatch.index).trim();
@@ -275,8 +276,9 @@
     const inventory = items || loadInventory();
     const line = item => `${item.quantity}${item.unit ? " " + item.unit : ""} ${item.name}${item.note ? " — " + item.note : ""}`;
     const fridge = inventory.filter(item => item.location === "fridge").map(line);
+    const freezer = inventory.filter(item => item.location === "freezer").map(line);
     const pantry = inventory.filter(item => item.location === "pantry").map(line);
-    return `Kitchen inventory (${new Date().toLocaleDateString()})\n\nFRIDGE\n${fridge.length ? fridge.map(value => "- " + value).join("\n") : "- Empty"}\n\nPANTRY\n${pantry.length ? pantry.map(value => "- " + value).join("\n") : "- Empty"}`;
+    return `Kitchen inventory (${new Date().toLocaleDateString()})\n\nFRIDGE\n${fridge.length ? fridge.map(value => "- " + value).join("\n") : "- Empty"}\n\nFREEZER\n${freezer.length ? freezer.map(value => "- " + value).join("\n") : "- Empty"}\n\nPANTRY\n${pantry.length ? pantry.map(value => "- " + value).join("\n") : "- Empty"}`;
   }
 
   window.CookbookKitchen = {
